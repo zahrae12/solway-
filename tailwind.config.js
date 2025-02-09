@@ -30,6 +30,7 @@ export default {
     
       black: '900',
     },
+   
     extend: {},
   },
   plugins: [],

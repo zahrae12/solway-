@@ -1,8 +1,28 @@
 import React from 'react'
-
+import { activités } from '../constants'
+import ActivityCard from '../Components/ActivityCard'
 const NosActivites = () => {
   return (
-    <div>NosActivites</div>
+   <section className='w-full flex flex-col lg:flex-row items-start gap-10 -mt-24 p-4'>
+    {/* left section */}
+    <div className='flex flex-col justify-end items-start lg:mt-0  lg:w-1/2 w-full pb-10 text-base/8'>
+     <h2 className='text-lg font-extrabold text-yellow-500 ml-8 leading-[24px] mt-16'>Everything you need</h2>
+     <h1 className='text-3xl font-extrabold leading-[36px] mt-2 ml-8'>Nos activités</h1>
+     <p className='text-lg font-medium leading-[28px] mt-4 text-gray-600 tracking-wide ml-8'>Notre ambition est de vous servir tout<br/> en mettant en oeuvre les meilleurs <br/> pratiques issus du savoir-faire acquis<br/> au cours des nombreux projets réalisés <br/>pour différents clients.</p>
+    </div>
+
+    {/* right section */}
+    <div className='lg:w-3/2 w-full mt-10 mr-4 shadow-md  rounded-md'>
+    <div className="bg-white grid grid-cols-3 sm:grid-cols-2 lg:grid-cols-2 ">
+   
+    {activités.map((activity) => (
+    <ActivityCard key={activity.label} {...activity} />
+  ))}
+</div>
+
+
+    </div>
+   </section>
   )
 }
 

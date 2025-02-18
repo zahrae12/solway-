@@ -1,3 +1,8 @@
+import soldesk from "../assets/images/soldesk.png";
+import hr from "../assets/images/hr.png";
+import invoice from "../assets/images/invoice.png";
+
+
 export const navLinks = [
     { href: "#home", label: "Home" },
     { href: "#about-us", label: "Features" },
@@ -34,5 +39,23 @@ export const innovations = [
       subtext: "VERIF’DSN PLUS est un outil complémentaire de VERIF’DSN qui \n permet de contrôler votre DSN sur plusieurs périodes de paie. Cela \n vous permettra de réaliser facilement et rapidement des contrôles \n trimestrielle, semestrielle ou annuelle de vos cotisations. \nPour plus d’informations, veuillez nous contacter, nous serons ravis\n à répondre à vos interrogations."
     }
   ];
+  export const solutions = [
+    {
+      label: "SOLDESK",
+      subtext: "SOLDESK est un outil interne de gestion \n de tickets permettant de traiter efficacement \n les demandes clients (anomalies, évolutions,\n etc.) via une interface simple et rapide",
+      img: soldesk,
+    },
+    {
+        label:"SOLWAY HR",
+        subtext:"SOLWAY HR est une solution complète pour\n optimiser la gestion des ressources\n  humaines, couvrant l'embauche, le \n recrutement, la paie, et plus encore.",
+        img: hr,
+    },
+    {
+        label:"SOLWAY INVOICE",
+        subtext:"SOLWAY INVOICE est un outil interne qui \n simplifie la facturation en permettant la\n saisie facile des comptes rendus d'activité et la génération automatique de factures pour les clients finaux.",
+        img: invoice,
+    }
+  ];
+  
   
 

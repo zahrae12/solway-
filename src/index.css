@@ -47,3 +47,17 @@ html, body {
       @apply sm:pb-24 pb-12;
     }
 }
+@media (max-width: 640px) {
+  .small-screen-bg {
+    background-image: url('/src/assets/images/another-image.png') !important;
+  }
+ 
+
+  
+}
+@media (max-width: 1024px) {
+  .small-screen-bg {
+    background-image: url('/src/assets/images/another-image.png') !important;
+  }
+ 
+}

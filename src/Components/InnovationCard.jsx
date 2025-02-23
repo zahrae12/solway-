@@ -16,8 +16,8 @@ const InnovationCard = ({ label, subtext }) => {
       />
 
       {/* Discover Button */}
-      <div className="mt-4 flex items-center text-yellow-500 cursor-pointer">
-        <span className="font-extrabold text-sm md:text-base">Discover</span>
+      <div className="mt-4 flex items-center lg:text-yellow-500 text-black  cursor-pointer">
+        <span className="font-extrabold text-sm md:text-base">Decouvrir</span>
         <FaArrowRight size={18} className="ml-2" />
       </div>
     </div>

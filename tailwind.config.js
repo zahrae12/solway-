@@ -31,7 +31,11 @@ export default {
       black: '900',
     },
    
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }

@@ -8,7 +8,7 @@ export const navLinks = [
     { href: "#about-us", label: "Features" },
     { href: "#products", label: "Clients" },
     { href: "#contact-us", label: "Contact " },
-    { href: "#contact-us", label: " More " },
+    { href: "#contact-us", label: "More" },
 ];
 export const activités = [
     {
@@ -36,7 +36,7 @@ export const activités = [
 export const innovations = [
     {
       label: "VERIF'DSN PLUS",
-      subtext: "VERIF’DSN PLUS est un outil complémentaire de VERIF’DSN qui \n permet de contrôler votre DSN sur plusieurs périodes de paie. Cela \n vous permettra de réaliser facilement et rapidement des contrôles \n trimestrielle, semestrielle ou annuelle de vos cotisations. \nPour plus d’informations, veuillez nous contacter, nous serons ravis\n à répondre à vos interrogations."
+      subtext: "VERIF’DSN PLUS est un outil complémentaire de VERIF’DSN qui  permet de contrôler votre DSN sur plusieurs périodes de paie. Cela \n vous permettra de réaliser facilement et rapidement des contrôles \n trimestrielle, semestrielle ou annuelle de vos cotisations. \nPour plus d’informations, veuillez nous contacter, nous serons ravis\n à répondre à vos interrogations."
     }
   ];
   export const solutions = [

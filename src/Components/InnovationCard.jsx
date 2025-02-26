@@ -5,7 +5,7 @@ const InnovationCard = ({ label, subtext }) => {
   const boldedText = subtext.replace(/SOLWAY/g, "<strong>SOLWAY</strong>");
 
   return (
-    <div className="p-4">
+    <div className="p">
     
       <h3 className="text-xl md:text-2xl font-extrabold tracking-wider">{label}</h3>
 
@@ -16,9 +16,9 @@ const InnovationCard = ({ label, subtext }) => {
       />
 
       {/* Discover Button */}
-      <div className="mt-4 flex items-center lg:text-yellow-500 text-black  cursor-pointer">
-        <span className="font-extrabold text-sm md:text-base">Decouvrir</span>
-        <FaArrowRight size={18} className="ml-2" />
+      <div className="mt-8 flex items-center lg:text-yellow-500 text-black  cursor-pointer">
+        <span className="font-extrabold text-sm md:text-base ">Decouvrir</span>
+        <FaArrowRight size={18} className="ml-2 mt-2" />
       </div>
     </div>
   );

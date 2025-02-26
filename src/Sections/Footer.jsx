@@ -4,56 +4,66 @@ import { RiTwitterXFill } from "react-icons/ri";
 const Footer = () => {
   return (
     <div>
-    <section className="relative  flex justify-center items-center -mt-16">
-    <div className="bg-yellow-500 lg:w-[1300px] lg:h-[350px] text-center p-10 rounded-lg shadow-lg">
-    <h1 className='text-white text-3xl font-extrabold leading-normal'>SOLWAY Recrute</h1>
-    <h1 className='text-white text-3xl font-extrabold leading-normal'>Vous etes Consultant SAP HR </h1>
+    <section className=" flex justify-center items-center -mt-16  ">
+    <div className="bg-yellow-500 lg:w-full lg:h-auto text-center p-10 rounded-lg shadow-lg">
+    <h1 className='text-white text-3xl lg:font-extrabold  font-bold leading-normal'>SOLWAY Recrute</h1>
+    <h1 className='text-white  text-lg lg:font-extrabold font-bold leading-normal'>Vous etes Consultant SAP HR? </h1>
     <p className="text-white mt-4 text-sm sm:text-base">
-      Rejoignez-nous pour découvrir nos opportunités uniques et évoluez <br/> avec nous, 
-      du stage au CDI débutant, jusqu’au CDI expérimenté. Votre<br/> avenir commence ici !
-    </p>
+  Rejoignez-nous pour découvrir nos opportunités uniques et évoluez 
+  <span className="hidden lg:block"></span> avec nous, du stage au CDI débutant, 
+  jusqu’au CDI expérimenté. Votre
+  <span className="hidden lg:block"></span> avenir commence ici !
+</p>
+
 
     {/* Button */}
-    <button className="mt-6 bg-white border border-yellow-500 text-yellow-600 font-semibold py-3 px-10 rounded-md shadow-md hover:bg-gray-100 transition">
+    <button className="mt-6 bg-white border border-yellow-300  text-yellow-600 font-semibold py-3 px-20 lg:py-3 lg:px-10 rounded-md shadow-md hover:bg-gray-100 transition">
       Rejoignez-nous
     </button>
   </div>
   
   </section>
-  <footer className="text-gray-700 mt-12">
-  <div className="container  px-24 flex flex-col sm:flex-row justify-between items-center">
-    
-    {/* Left Side: Copyright + Links */}
-    <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
-      <p className="text-xl font-inter sm:text-sm whitespace-nowrap">
-        Copyright © 2025 <span className="font-inter">Solway</span> | All Rights Reserved
-      </p>
+  <footer className=" text-gray-700 px-6 py-4 lg:pt-8">
+      <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 text-sm">
 
-      <div className="flex flex-wrap justify-center space-x-3  font-inter ">
-        <a href="#" className="text-yellow-600 underline">Terms of Service</a>
-        <span className="text-black">|</span>
-        <a href="#" className="text-yellow-600 underline">Privacy Policy</a>
-        <span className="text-black">|</span>
-        <a href="#" className="text-yellow-600 underline">Cookies Policy</a>
-        <span className="text-black">|</span>
-        <a href="#" className="text-yellow-600 underline">Contact</a>
-        <span className="text-black">|</span>
-        <a href="#" className="text-yellow-600 underline">Support</a>
+      
+        <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 w-full text-center sm:text-left  lg:text-base">
+          <p className="font-medium whitespace-nowrap">
+            © 2025 <span className="font-semibold">Solway</span> | All Rights Reserved
+          </p>
+
+          {/* Links */}
+          <div className="flex flex-wrap justify-center sm:justify-start lg:space-between lg:space-x-1 space-x-2">
+            <a href="#" className="text-yellow-600 underline">Terms of Service</a>
+            <span className="hidden sm:inline text-gray-500">| </span>
+            <a href="#" className="text-yellow-600 underline">Privacy Policy</a>
+            <span className="hidden sm:inline text-gray-500">| </span>
+            <a href="#" className="text-yellow-600 underline">Cookies Policy</a>
+            <span className="hidden sm:inline text-gray-500">|</span>
+            <a href="#" className="text-yellow-600 underline">Contact</a>
+            <span className="hidden sm:inline text-gray-500">|</span>
+            <a href="#" className="text-yellow-600 underline"> Support</a>
+          </div>
+        </div>
+
+        {/* Right Side: Social Icons + Language Button */}
+        <div className="flex items-center space-x-4 flex-col sm:flex-row lg:ml-2">
+          
+          {/* Social Media Icons */}
+          <div className="flex items-center space-x-3">
+            <a href="#" className="bg-sky-600 text-white text-lg p-2 rounded-md hover:opacity-80 transition"><FiLinkedin /></a>
+            <a href="#" className="bg-black text-white text-lg p-2 rounded-md hover:opacity-80 transition"><RiTwitterXFill /></a>
+            <a href="#" className="bg-blue-700 text-white text-lg p-2 rounded-md hover:opacity-80 transition"><FiFacebook /></a>
+          </div>
+
+          {/* Language Button */}
+          <button className="border border-yellow-600 text-yellow-600 px-4 py-2 rounded-md hover:bg-yellow-600 hover:text-white transition mt-4 lg:mt-0">
+            English
+          </button>
+        </div>
+
       </div>
-    </div>
-
-    {/* Right Side: Social Icons + Language Button */}
-    <div className="flex items-center space-x-4 mt-3 sm:mt-0">
-      <a href="#" className="text-white bg-sky-600 text-xl p-2 rounded-md hover:opacity-80"><FiLinkedin /></a>
-      <a href="#" className="text-white bg-black text-xl p-2 rounded-md hover:opacity-80"><RiTwitterXFill /></a>
-      <a href="#" className="text-white bg-blue-700 text-xl p-2 rounded-md hover:opacity-80"><FiFacebook /></a>
- </div>
-      <button className="border border-yellow-600 text-yellow-600 text-sm px-6 py-2 rounded-md hover:bg-yellow-600 hover:text-white transition lg:-ml-12 mt-6 lg:mt-0">
-        English
-      </button>
-    </div>
- 
-</footer>
+    </footer>
 
 
 </div>

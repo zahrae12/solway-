@@ -7,7 +7,7 @@ const Footer = () => {
     <section className=" flex justify-center items-center -mt-16  ">
     <div className="bg-yellow-500 lg:w-full lg:h-auto text-center p-10 rounded-lg shadow-lg">
     <h1 className='text-white text-3xl lg:font-extrabold  font-bold leading-normal'>SOLWAY Recrute</h1>
-    <h1 className='text-white  text-lg lg:font-extrabold font-bold leading-normal'>Vous etes Consultant SAP HR? </h1>
+    <h1 className='text-white  lg:text-3xl lg:font-extrabold font-bold leading-normal'>Vous etes Consultant SAP HR? </h1>
     <p className="text-white mt-4 text-sm sm:text-base">
   Rejoignez-nous pour découvrir nos opportunités uniques et évoluez 
   <span className="hidden lg:block"></span> avec nous, du stage au CDI débutant, 
@@ -29,7 +29,7 @@ const Footer = () => {
       
         <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 w-full text-center sm:text-left  lg:text-base">
           <p className="font-medium whitespace-nowrap">
-            © 2025 <span className="font-semibold">Solway</span> | All Rights Reserved
+           copyright © 2025 <span className="font-semibold">Solway</span> | All Rights Reserved
           </p>
 
           {/* Links */}

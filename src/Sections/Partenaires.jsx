@@ -7,7 +7,7 @@ const Partenaires = () => {
       <div className="w-auto flex flex-col xl:flex-row items-center gap-6 xl:gap-20 xl:-mr-8 xl:-ml-8 ">
         
         {/* Title */}
-        <h2 className="text-3xl font-extrabold leading-[40px] px-12 text-black 
+        <h2 className="xl:text-3xl md:text-4xl text-3xl font-extrabold leading-[40px] px-12 text-black 
                        text-center md:text-center lg:text-left sm:whitespace-normal md:whitespace-nowrap">
           Ils nous font <br className="block lg:hidden" /> confiance
         </h2>
@@ -17,7 +17,7 @@ const Partenaires = () => {
           <img
             src={LogosCard}
             alt="Partenaires"
-            className="lg:w-auto h-auto object-contain"
+            className="lg:w-auto h-auto object-contain "
           />
         </div>
 

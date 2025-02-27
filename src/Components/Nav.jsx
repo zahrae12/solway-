@@ -8,7 +8,7 @@ const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="pl-8 py-8 absolute z-10 w-full ">
+    <header className="pl-8 xl:pl-2 md:pl-10 py-8 absolute z-10 w-full ">
       <nav className="flex justify-between items-center max-container pl-0">
         {/* Logo */}
         <a href="/">

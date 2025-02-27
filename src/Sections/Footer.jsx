@@ -23,7 +23,7 @@ const Footer = () => {
   </div>
   
   </section>
-  <footer className=" text-gray-700 px-6 py-4 lg:pt-8">
+  <footer className=" text-gray-700 px-6 py-4 pt-8">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 text-sm">
 
       

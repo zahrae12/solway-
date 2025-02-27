@@ -6,7 +6,7 @@ const Hero = () => {
 
 
       {/* left side */}
-      <div className="flex flex-col lg:px-8 md:mt-[-80px] mt-8 w-full md:w-1/2 p-0">
+      <div className="flex flex-col lg:px-8 md:mt-[-80px] mt-0 w-full md:w-1/2 p-0">
 
 
       <h1 className="text-2xl lg:font-extrabold font-bold text-center lg:text-left leading-[32px] lg:pt-0 pt-32  px-14 md:text-nowrap lg:-ml-12     ">
@@ -29,7 +29,7 @@ const Hero = () => {
       </div>
 
       {/* right side */}
-      <div className="lg:w-1/2 w-full h-[264px] relative overflow-hidden  sm:h-[600px]  lg:h-[720px] -mt-">
+      <div className="lg:w-1/2 w-full h-[264px] relative overflow-hidden  sm:h-[600px]  lg:h-[720px] -mt-10">
         <img
           src="src/assets/images/skyscraper.jpeg"
           alt="Buildings"

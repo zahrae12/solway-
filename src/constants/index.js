@@ -1,6 +1,6 @@
 import soldesk from "../assets/images/soldesk.png";
 import hr from "../assets/images/hr.png";
-import invoice from "../assets/images/invoice.png";
+import replace from "../assets/images/replace.png";
 
 
 export const navLinks = [
@@ -53,7 +53,7 @@ export const innovations = [
     {
         label:"SOLWAY INVOICE",
         subtext:"SOLWAY INVOICE est un outil interne qui \n simplifie la facturation en permettant la\n saisie facile des comptes rendus d'activité et la génération automatique de factures pour les clients finaux.",
-        img: invoice,
+        img: replace,
     }
   ];
   

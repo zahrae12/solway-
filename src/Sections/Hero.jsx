@@ -9,11 +9,11 @@ const Hero = () => {
       <div className="flex flex-col lg:px-8 md:mt-[-80px] mt-0 w-full md:w-1/2 p-0">
 
 
-      <h1 className="text-2xl lg:font-extrabold font-bold text-center lg:text-left leading-[32px] lg:pt-0 pt-32  px-14 md:text-nowrap lg:-ml-12     ">
+      <h1 className="text-2xl lg:font-extrabold font-bold text-center lg:text-left leading-[32px] lg:pt-0 pt-32 px-10 lg:px-14 md:text-nowrap lg:-ml-12     ">
         <span className="  lg:text-black">Welcome to <span className='text-yellow-500 lg:text-black'>SOLWAY Consulting & Services</span></span>  <br />
           <span className=" lg:text-yellow-500">Cross our way, Find your solution.</span>
         </h1>
-        <p className="text-xl font-medium  text-center lg:text-left mt-3 text-gray-600 md:text-nowrap lg:ml-2 lg:mt-4   ">
+        <p className="text-xl lg:font-medium p-2 lg:p-0  text-center lg:text-left mt-3 text-gray-600 md:text-nowrap lg:ml-2 lg:mt-4   ">
           Libérez le potentiel de votre entreprise avec des solutions sur <br className="hidden sm:block" /> mesure et des conseils d'experts.
           Ensemble, relevons vos défis<br className="hidden sm:block"/> et propulsons votre succès.
         </p>

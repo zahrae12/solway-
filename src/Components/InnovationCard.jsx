@@ -7,11 +7,11 @@ const InnovationCard = ({ label, subtext }) => {
   return (
     <div className="p">
     
-      <h3 className="text-xl md:text-2xl font-extrabold tracking-wider">{label}</h3>
+      <h3 className="text-xl lg:text-left text-center md:text-2xl font-extrabold tracking-wider">{label}</h3>
 
     
       <p
-        className="mt-2 text-base leading-[24px] text-gray-700"
+        className="mt-2 text-base leading-[24px] text-gray-700 lg:text-left text-center"
         dangerouslySetInnerHTML={{ __html: boldedText }}
       />
 

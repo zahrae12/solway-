@@ -22,7 +22,7 @@ const Nav = () => {
         </a>
 
         {/* Desktop Menu */}
-        <ul className="flex-1 flex ml-8  sm:space-x-4 md:space-x-6 lg:space-x-10 xl:space-x-20 max-lg:hidden">
+        <ul className="flex-1 flex ml-8  sm:space-x-4 md:space-x-6 lg:space-x-6 xl:space-x-20 max-lg:hidden">
          {navLinks.map((item) => (
     <li key={item.label}>
       <a

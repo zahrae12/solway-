@@ -7,7 +7,7 @@ export const navLinks = [
     { href: "#home", label: "Home" },
     { href: "#about-us", label: "Features" },
     { href: "#products", label: "Clients" },
-    { href: "#contact-us", label: "Contact " },
+    { href: "/contact", label: "Contact " },
     { href: "#contact-us", label: "More" },
 ];
 export const activités = [
@@ -54,6 +54,34 @@ export const innovations = [
         label:"SOLWAY INVOICE",
         subtext:"SOLWAY INVOICE est un outil interne qui \n simplifie la facturation en permettant la\n saisie facile des comptes rendus d'activité et la génération automatique de factures pour les clients finaux.",
         img: replace,
+    }
+  ];
+
+  export const More = [
+    {
+      label: "Nos Solutions",
+      subtext: [
+        "VERIFI'DSN",
+        "VERIFI'DSN PLUS",
+        "SOLWAY Synchronisation HR",
+        "SOLDESK",
+        "SOLWAY HR",
+        "SOLWAY INVOICE",
+        "ASSOCIATION SOLWAY POUR LA SOLIDARITE"
+      ]
+    },
+    {
+      label: "Carrières",
+      subtext: [
+        "Nos offres D'emploi",
+        "Candidatures",
+        "Nos Missions",
+        "Vos Missions"
+      ]
+    },
+    {
+      label: "Formations",
+      subtext: ["SOLWAY EXECUTIVE Education"]
     }
   ];
   

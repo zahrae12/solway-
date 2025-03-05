@@ -1,6 +1,8 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <section className="w-full flex flex-col md:flex-row items-center lg:gap-24 gap-20   ">
 
@@ -19,7 +21,8 @@ const Hero = () => {
         </p>
         <div className="mt-6 md:mt-[-40px] lg:mt-8 flex flex-col sm:flex-row gap-4 lg:gap-6 w-full px-4 lg:px-0">
 
-          <button className="bg-yellow-500 text-white  lg:w-[200px] lg:h-[48px] w-full h-[48px] rounded-lg shadow-lg font-semibold ">
+          <button className="bg-yellow-500 text-white  lg:w-[200px] lg:h-[48px] w-full h-[48px] rounded-lg shadow-lg font-semibold "
+           onClick={() => navigate("/about")}>
             Qui sommes-nous ?
           </button>
           <button className="border border-gray-300  lg:w-[200px] lg:h-[48px] w-full h-[48px] rounded-lg font-semibold bg-gray-100">
@@ -33,7 +36,7 @@ const Hero = () => {
         <img
           src="src/assets/images/skyscraper.jpeg"
           alt="Buildings"
-          className="w-full h-full object-cover transform lg:-skew-x-6 origin-bottom-left transition-all duration-300 ease-in-out"
+          className="w-full h-full object-cover transform lg:-skew-x-6 origin-bottom-left transition-all duration-300 ease-in-out "
         />
       </div>
     </section>

@@ -6,10 +6,10 @@ const Footer = () => {
     <div>
     <section className=" flex justify-center items-center -mt-16  ">
     <div className="bg-yellow-500 lg:w-full lg:h-auto text-center px-4 py-8 rounded-lg shadow-lg ">
-    <h1 className='text-white text-3xl lg:font-extrabold  font-bold leading-normal  '>SOLWAY Recrute</h1>
-    <h1 className='text-white  lg:text-3xl lg:font-extrabold font-bold leading-normal m-0 p-0'>Vous etes Consultant SAP HR ? </h1>
+    <h1 className='text-white text-3xl lg:font-extrabold  font-bold leading-[22px]  '>SOLWAY Recrute</h1>
+    <h1 className='text-white  lg:text-3xl lg:font-extrabold font-bold leading-[42px]  '>Vous etes Consultant SAP HR ? </h1>
     
-    <p className="text-white mt-4 text-sm sm:text-base">
+    <p className="text-white mt-2 text-sm sm:text-base">
   Rejoignez-nous pour découvrir nos opportunités uniques et évoluez 
   <span className="hidden lg:block"></span> avec nous, du stage au CDI débutant, 
   jusqu’au CDI expérimenté. Votre

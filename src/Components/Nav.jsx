@@ -3,6 +3,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import { FiArrowRight } from "react-icons/fi";
 import { navLinks, More } from "../constants";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -46,54 +47,59 @@ const Nav = () => {
 
         {/* Desktop Menu */}
         <ul className="flex-1 flex ml-8 sm:space-x-4 md:space-x-6 lg:space-x-6 xl:space-x-20 max-lg:hidden">
-          {navLinks.map((item) => (
-            <li key={item.label} className="relative">
-              <a
-                href={item.href}
-                className="font-medium text-base lg:text-lg text-gray-900"
-                ref={item.label === "More" ? moreButtonRef : null}
-                onClick={(e) => {
-                  if (item.label === "More") {
-                    e.preventDefault();
-                    setIsMoreOpen(!isMoreOpen);
-                  }
-                }}
-              >
-                {item.label}
-              </a>
+  {navLinks.map((item) => (
+    <li key={item.label} className="relative">
+      {item.label === "More" ? (
+        // Keep "More" as a button with dropdown behavior
+        <button
+          ref={moreButtonRef}
+          className="font-medium text-base lg:text-lg text-gray-900"
+          onClick={(e) => {
+            e.preventDefault();
+            setIsMoreOpen(!isMoreOpen);
+          }}
+        >
+          {item.label}
+        </button>
+      ) : (
+        // Use Link for navigation items
+        <Link to={item.href} className="font-medium text-base lg:text-lg text-gray-900">
+          {item.label}
+        </Link>
+      )}
 
-              {/* More Dropdown - Using fixed positioning */}
-              {item.label === "More" && isMoreOpen && (
-                <div 
-                  ref={dropdownRef}
-                  className="fixed bg-white bg-opacity-100 shadow-lg rounded-lg p-6 lg:-ml-32 mr-12 md:mt-2  z-50"
-                  style={{
-                    top: moreButtonRef.current ? moreButtonRef.current.getBoundingClientRect().bottom + 10 + 'px' : '0',
-                    left: moreButtonRef.current ? moreButtonRef.current.getBoundingClientRect().left - 100 + 'px' : '0',
-                  }}
-                >
-                  <div className="flex flex-row gap-4">
-                    {More.map((category) => (
-                      <div key={category.label} className="mb-0">
-                        <h4 className="font-semibold text-gray-900 px-4">{category.label}</h4>
-                        <ul className="mt-6">
-                          {category.subtext.map((subItem, index) => (
-                            <li
-                              key={index}
-                              className="text-gray-700 text-sm py-3 px-4 hover:text-black cursor-pointer"
-                            >
-                              {subItem}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </li>
-          ))}
-        </ul>
+      {/* More Dropdown - Using fixed positioning */}
+      {item.label === "More" && isMoreOpen && (
+        <div
+          ref={dropdownRef}
+          className="fixed bg-white bg-opacity-100 shadow-lg rounded-lg p-6 lg:-ml-32 mr-12 md:mt-2 z-50"
+          style={{
+            top: moreButtonRef.current ? moreButtonRef.current.getBoundingClientRect().bottom + 10 + "px" : "0",
+            left: moreButtonRef.current ? moreButtonRef.current.getBoundingClientRect().left - 100 + "px" : "0",
+          }}
+        >
+          <div className="flex flex-row gap-4">
+            {More.map((category) => (
+              <div key={category.label} className="mb-0">
+                <h4 className="font-semibold text-gray-900 px-4">{category.label}</h4>
+                <ul className="mt-6">
+  {category.subtext.map((subItem, index) => (
+    <li key={index} className="py-3 px-4 hover:text-black cursor-pointer">
+      <Link to={subItem.path} className="text-gray-700 text-sm hover:underline">
+        {subItem.name}
+      </Link>
+    </li>
+  ))}
+</ul>
+
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </li>
+  ))}
+</ul>
 
         {/* Mobile Menu Toggle Button */}
         <div>
@@ -152,51 +158,56 @@ const Nav = () => {
         </div>
       )}
 
-      {/* Mobile More Menu (separate from main mobile menu) */}
-      {isMobileMoreOpen && (
-        <div className="fixed top-0 left-0 w-full h-auto bg-white z-50 overflow-y-auto p-4 rounded-lg">
-          {/* Header with logo and back button */}
-          <div className="flex justify-between items-center mb-6 border-b pb-4">
-            {/* Logo */}
-            <img
-              src="src/assets/images/image 4.png"
-              alt="logo"
-              width={130}
-              height={29}
-            />
-              </div>
-            {/* Back Button */}
-            <div className="mb-6">
-            <button 
-             onClick={() => setIsMobileMoreOpen(false)} 
-             className="w-auto flex items-center text-gray-800 font-medium border border-gray-300 rounded-lg px-6 py-3"
-            >
-           <FaArrowRight className="transform rotate-180 mr-2" /> Back
-             </button>
-</div>
-        
-          
-          {/* Categories layout */}
-          <div className="flex flex-col gap-8">
-             
-            {More.map((category) => (
-              <div key={category.label} className="">
-                {/* Category title */}
-                <h3 className="text-xl font-bold mb-4">{category.label}</h3>
-                
-                {/* Items in two columns */}
-                <div className="grid grid-cols-2 gap-x-4 gap-y-2">
-                  {category.subtext.map((subItem, index) => (
-                    <div key={index} className="py-2">
-                      <span className="text-gray-800">{subItem}</span>
-                    </div>
-                  ))}
-                </div>
+     {/* Mobile More Menu (separate from main mobile menu) */}
+{isMobileMoreOpen && (
+  <div className="fixed top-0 left-0 w-full h-full bg-white z-50 overflow-y-auto p-6 rounded-lg">
+    {/* Header with logo and back button */}
+    <div className="flex justify-between items-center border-b pb-4">
+      {/* Logo */}
+      <img
+        src="src/assets/images/image 4.png"
+        alt="logo"
+        width={130}
+        height={29}
+      />
+      
+      {/* Back Button */}
+      <button 
+        onClick={() => setIsMobileMoreOpen(false)} 
+        className="flex items-center text-gray-800 font-medium border border-gray-300 rounded-lg px-4 py-2"
+      >
+        <FaArrowRight className="transform rotate-180 mr-2" /> Back
+      </button>
+    </div>
+
+    {/* Categories layout */}
+    <div className="mt-6 space-y-6">
+      {More.map((category) => (
+        <div key={category.label}>
+          {/* Category title */}
+          <h3 className="text-lg font-semibold mb-3 text-gray-900">{category.label}</h3>
+
+          {/* Items as links */}
+          <div className="grid grid-cols-2 gap-4">
+            {category.subtext.map((subItem, index) => (
+              <div key={index} className="py-2">
+                <Link 
+                  to={subItem.path} 
+                  className="text-gray-700 hover:underline block"
+                  onClick={() => setIsMobileMoreOpen(false)}
+                >
+                  {subItem.name}
+                </Link>
               </div>
             ))}
           </div>
         </div>
-      )}
+      ))}
+    </div>
+  </div>
+)}
+
+          
     </header>
   );
 };

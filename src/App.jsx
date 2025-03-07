@@ -3,6 +3,7 @@ import { Hero, NosActivites, NosInnovations, NosSolutions, Partenaires, Footer }
 import Nav from "./Components/Nav";
 import About from "./Pages/About"; // Import About page
 import Contact from "./Pages/Contact";
+import Verifidsn from "./Pages/Verifidsn";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         {/* About Page */}
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/verifi-dsn" element={<Verifidsn />} />
       </Routes>
     </Router>
   );

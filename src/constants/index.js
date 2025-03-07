@@ -61,29 +61,41 @@ export const innovations = [
     {
       label: "Nos Solutions",
       subtext: [
-        "VERIFI'DSN",
-        "VERIFI'DSN PLUS",
-        "SOLWAY Synchronisation HR",
-        "SOLDESK",
-        "SOLWAY HR",
-        "SOLWAY INVOICE",
-        "ASSOCIATION SOLWAY POUR LA SOLIDARITE"
+        { name: "VERIFI'DSN", path: "/verifi-dsn" },
+        { name: "VERIFI'DSN PLUS", path: "/verifi-dsn-plus" },
+        { name: "SOLWAY Synchronisation HR", path: "/solway-synchronisation-hr" },
+        { name: "SOLDESK", path: "/soldesk" },
+        { name: "SOLWAY HR", path: "/solway-hr" },
+        { name: "SOLWAY INVOICE", path: "/solway-invoice" },
+        { name: "ASSOCIATION SOLWAY POUR LA SOLIDARITE", path: "/association-solway" }
       ]
     },
     {
       label: "Carrières",
       subtext: [
-        "Nos offres D'emploi",
-        "Candidatures",
-        "Nos Missions",
-        "Vos Missions"
+        { name: "Nos offres D'emploi", path: "/offres-emploi" },
+        { name: "Candidatures", path: "/candidatures" },
+        { name: "Nos Missions", path: "/nos-missions" },
+        { name: "Vos Missions", path: "/vos-missions" }
       ]
     },
     {
       label: "Formations",
-      subtext: ["SOLWAY EXECUTIVE Education"]
+      subtext: [{ name: "SOLWAY EXECUTIVE Education", path: "/solway-education" }]
     }
   ];
   
+  export const dsns = [
+    { 
+      label: "ETAPE 2 : Sélection des données",
+      subtext: "Cette étape permet de :",
+      text: [
+        "Sélectionner la source des données : Un fichier texte ou B2A",
+        "Renseigner la période de la paie.",
+        "Affiner la sélection en renseignant des matricules, tranches de décompte, sociétés …",
+        "Choisir le mode d’exécution du programme",
+        "Précisez la méthode de récupération des fichiers B2A ainsi que les résultats du contrôle (Par mail, fichiers excel en local/ serveur)."
+      ]
+    }
+  ];
   
-

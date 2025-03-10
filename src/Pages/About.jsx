@@ -10,8 +10,8 @@ const About = () => {
       <HeroAbout />
        <div className="w-full "></div>
       <IntroductionAbout />
-      <section className="bg-cover bg-no-repeat padding small-screen-bg md:bg-gray-50 bg-gray-50 ">
-                <Footer />
+      <section className="bg-cover bg-no-repeat lg:px-12 lg:pt-6 px-6 pt-16 small-screen-bg md:bg-gray-50 bg-gray-50 ">
+       <Footer />
               </section>
     </main>
       )}

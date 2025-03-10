@@ -16,7 +16,7 @@ const VerifyFooter = () => {
                 Lorem ipsum dolor sit amet consectetur adipiscing elit dolor mattis
                 sit phasellus mollis sit aliquam sit nullam neque.
               </p>
-              <button className="bg-white text-black px-6 py-2 rounded-md font-medium mt-4 w-full">
+              <button className="bg-white text-black px-6 py-2 shadow font-medium mt-4 w-full lg:w-[125px]">
                 Voir Plus
               </button>
             </div>

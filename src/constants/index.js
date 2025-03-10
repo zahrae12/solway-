@@ -92,7 +92,7 @@ export const innovations = [
       text: [
         "Sélectionner la source des données : Un fichier texte ou B2A",
         "Renseigner la période de la paie.",
-        "Affiner la sélection en renseignant des matricules, tranches de décompte, sociétés …",
+        "Affiner la sélection en renseignant des matricules, tranches de décompte, sociétés",
         "Choisir le mode d’exécution du programme",
         "Précisez la méthode de récupération des fichiers B2A ainsi que les résultats du contrôle (Par mail, fichiers excel en local/ serveur)."
       ]

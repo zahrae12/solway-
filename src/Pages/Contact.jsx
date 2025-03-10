@@ -4,8 +4,9 @@ import { Footer } from '../Sections'
 const Contact = () => {
   return (
     <main className="w-full">
-      <ContactHero/>
-     <section className="bg-cover bg-no-repeat padding small-screen-bg md:bg-gray-50 bg-gray-50 ">
+
+      <ContactHero />
+     <section className="bg-cover bg-no-repeat padding  bg-gray-100 ">
                      <Footer />
                    </section>
       </main>

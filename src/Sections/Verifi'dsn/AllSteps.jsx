@@ -1,41 +1,96 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+const steps = [
+  {
+    title: "Etape 1 : Paramétrage Blocs DSN",
+    image: "src/assets/images/parametrage.png", // Replace with actual image URL
+    description: "Les blocs DSN à contrôler",
+  },
+  {
+    title: "Etape 2 : Suivi DSN",
+    image: "src/assets/images/third.png", // Replace with actual image URL
+    description: "Vérification des données DSN",
+  },
+  {
+    title: "Etape 2 : Suivi DSN",
+    image: "src/assets/images/third.png", // Replace with actual image URL
+    description: "Vérification des données DSN",
+  },
+];
 
 const AllSteps = () => {
-  const images = [
-    "src/assets/images/parametrage.png",
-    "src/assets/images/png",
-    "src/assets/images/third.png",
-  ];
-  const [current, setCurrent] = useState(0);
+  const [currentStep, setCurrentStep] = useState(0);
 
-  const nextSlide = () => setCurrent((prev) => (prev + 1) % images.length);
-  const prevSlide = () => setCurrent((prev) => (prev - 1 + images.length) % images.length);
+  const nextStep = () => {
+    setCurrentStep((prev) => (prev + 1) % steps.length);
+  };
+
+  const prevStep = () => {
+    setCurrentStep((prev) => (prev - 1 + steps.length) % steps.length);
+  };
 
   return (
-    <section className="py-4 ">
-    <h1 className="text-center font-extrabold text-3xl text-gray-950  -mt-12 lg:mt-0">Check All steps</h1>
-    <div className="relative w-full max-w-4xl mx-auto mt-6">
-        
-      <img src={images[current]} alt={`Step ${current + 1}`} className="w-full h-auto rounded-lg" />
-      <button onClick={prevSlide} className="absolute left-2 top-1/2 -translate-y-1/2 bg-gray-700 p-2 text-white rounded-full">❮</button>
-      <button onClick={nextSlide} className="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-700 p-2 text-white rounded-full">❯</button>
-      <div className="flex justify-center mt-2 space-x-2">
-        {images.map((_, index) => (
-          <div
+    <div className="relative w-full  overflow-hidden">
+      <h2 className="text-3xl font-extrabold font-inter leading-[48px] text-center -mt-2">Check all steps</h2>
+
+      <div className="overflow-hidden mt-8">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{
+            transform: `translateX(-${currentStep * 80}%)`, // Adjust visibility of next step
+          }}
+        >
+          {steps.map((step, index) => (
+            <div key={index} className="min-w-[80%] mr-4 p-2">
+              <img src={step.image} alt={step.title} className="w-full rounded-lg shadow-md" />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Navigation Buttons */}
+      <div className="flex justify-center items-center gap-8 mt-4">
+        <button
+          onClick={prevStep}
+          className={`p-2 rounded-lg ${
+            currentStep === 0 ? "bg-gray-300" : "bg-yellow-500 text-white"
+          }`}
+          disabled={currentStep === 0}
+        >
+          <ChevronLeft size={24} />
+        </button>
+        <button
+          onClick={nextStep}
+          className={`p-2 rounded-lg ${
+            currentStep === steps.length - 1 ? "bg-gray-300" : "bg-yellow-500 text-white"
+          }`}
+          disabled={currentStep === steps.length - 1}
+        >
+          <ChevronRight size={24} />
+        </button>
+      </div>
+
+      {/* Pagination Dots */}
+      <div className="flex justify-center mt-8 space-x-2">
+        {steps.map((_, index) => (
+          <span
             key={index}
-            className={`w-3 h-3 rounded-full ${current === index ? "bg-yellow-500" : "bg-gray-400"}`}
-            onClick={() => setCurrent(index)}
-          ></div>
+            className={`h-3 w-3 rounded-full ${
+              currentStep === index ? "bg-yellow-500" : "bg-gray-300"
+            }`}
+          />
         ))}
       </div>
-      <div className="flex justify-center mt-4">
-  <button className="bg-yellow-500 text-white px-4 py-2 rounded-md">
+
+      {/* Brochure Button */}
+      <div className="flex justify-center mt-8">
+  <button className="w-full sm:w-auto px-8 py-3 bg-yellow-500 text-white shadow-md">
     Brochure
   </button>
 </div>
 
     </div>
-    </section>
   );
 };
 

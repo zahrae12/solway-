@@ -5,14 +5,14 @@ const VerifyFooter = () => {
   return (
     <section>
     
-        <div className="bg-yellow-500 py-12  lg:px-20 px-8 w-full">
+        <div className="bg-yellow-500 py-12  lg:px-12 px-5 w-full lg:mt-4 xl:mt-0">
           <div className="w-full flex flex-col md:flex-row items-center">
             {/* Left Section - Text */}
             <div className="md:w-1/2 text-white w-full">
               <h2 className="font-extrabold text-2xl font-inter leading-9 lg:text-left text-center ">
-                Excited to work together on <span className="hidden lg:inline-block"><br /></span>your next project?
+                Excited to work together on <br />your next project?
               </h2>
-              <p className="text-white font-medium font-inter text-sm  mt-2 lg:text-left text-center">
+              <p className="text-white  font-inter text-sm  mt-2 lg:text-left text-center">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit dolor mattis
                 sit phasellus mollis sit aliquam sit nullam neque.
               </p>
@@ -22,7 +22,7 @@ const VerifyFooter = () => {
             </div>
     
             {/* Right Section - Video */}
-            <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center">
+            <div className="md:w-1/2 lg:mt-6 mt-10 flex justify-end">
               <img
                 className="w-[548px]  h-[280px]  rounded-lg shadow-lg"
                 src="src/assets/images/image 5.png"
@@ -34,10 +34,10 @@ const VerifyFooter = () => {
         </div>
 
         <footer className=" text-gray-700 px-16 py-4 pt-8">
-              <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 text-sm">
+              <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 text-sm lg:-mt-4 xl:mt-0">
         
               
-                <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 w-full text-center sm:text-left  lg:text-base">
+                <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 w-full text-center sm:text-left  lg:text-base ">
                   <p className="font-medium whitespace-nowrap">
                    copyright © 2025 <span className="font-semibold">Solway</span> | All Rights Reserved
                   </p>

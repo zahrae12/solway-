@@ -4,24 +4,36 @@ import { dsns } from '../../constants';
 
 const ControlDsn = () => {
   return (
-    <section className="py-0 px-4">
+    <section className="lg:py-0 lg:px-4 px-0 ">
       {/* Title Section */}
-      <h1 className="text-3xl text-center font-extrabold -mt-8">
-        Contrôlez votre DSN en <span className="block">trois étapes :</span>
-      </h1>
+      <div className="text-center ">
+  {/* Large Screens (Default) */}
+  <h1 className="hidden sm:block text-[30px] font-extrabold font-inter -mt-8">
+    Contrôlez votre DSN qu'en <span className="block -mt-2 text-[30px]">trois étapes :</span>
+  </h1>
+
+  {/* Small Screens (Mobile) */}
+  <h1 className="sm:hidden text-[26px] font-extrabold font-inter mt-0 ">
+    Contrôlez votre DSN <br /> qu'en trois étapes :
+  </h1>
+</div>
 
       {/* Buttons Section */}
       <div className="mt-10 flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center">
-        <button className="border border-gray-300 text-black py-2 px-6 md:px-10 rounded-lg font-semibold w-full md:w-auto flex-grow text-center">
-          Paramétrage des blocs DSN
-        </button>
-        <button className="border bg-yellow-500 text-white py-2 px-6 md:px-10 rounded-lg font-semibold w-full md:w-auto flex-grow text-center">
-          Sélection des données
-        </button>
-        <button className="border border-gray-300 text-black py-2 px-6 md:px-10 rounded-lg font-semibold w-full md:w-auto flex-grow text-center">
-          Exécution du contrôle
-        </button>
-      </div>
+  <button className="border border-gray-300 text-black lg:py-2 lg:px-6 px-8 py-3 rounded-lg font-semibold w-full md:w-auto flex items-center justify-center gap-2">
+    <img src="src/assets/icons/layer.png" alt="Paramétrage" className="w-5 h-5" />
+    Paramétrage des blocs DSN
+  </button>
+  <button className="border bg-yellow-500 text-white lg:py-2 lg:px-6 px-8 py-3 rounded-lg font-semibold w-full md:w-auto flex items-center justify-center gap-2">
+    <img src="src/assets/icons/data.png" alt="Sélection" className="w-5 h-5" />
+    Sélection des données
+  </button>
+  <button className="border border-gray-300 text-black lg:py-2 lg:px-6 px-8 py-3 rounded-lg font-semibold w-full md:w-auto flex items-center justify-center gap-2">
+    <img src="src/assets/icons/shield.png" alt="Exécution" className="w-5 h-5" />
+    Exécution du contrôle
+  </button>
+</div>
+
 
       {/* Content Section */}
       <div className="flex flex-col md:flex-row bg-white p-6 rounded-2xl shadow-lg gap-6 md:gap-10 mt-10 py-6 items-center">

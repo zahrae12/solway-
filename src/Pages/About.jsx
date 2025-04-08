@@ -10,7 +10,7 @@ const About = () => {
       <HeroAbout />
        <div className="w-full "></div>
       <IntroductionAbout />
-      <section className="bg-cover bg-no-repeat lg:px-12 lg:pt-6 px-6 pt-16 small-screen-bg md:bg-gray-50 bg-gray-50 ">
+      <section className="bg-cover bg-no-repeat lg:px-12  lg:pt-10 px-6 pt-16 small-screen-bg md:bg-gray-50 bg-gray-100 ">
        <Footer />
               </section>
     </main>

@@ -5,7 +5,7 @@ const VerifyFooter = () => {
   return (
     <section>
     
-        <div className="bg-yellow-500 py-12  lg:px-12 px-5 w-full lg:mt-4 xl:mt-0">
+        <div className="bg-yellow-500 py-8  lg:px-12 px-5 w-full lg:mt-4 xl:mt-0">
           <div className="w-full flex flex-col md:flex-row items-center">
             {/* Left Section - Text */}
             <div className="md:w-1/2 text-white w-full">
@@ -33,7 +33,7 @@ const VerifyFooter = () => {
           </div>
         </div>
 
-        <footer className=" text-gray-700 px-16 py-4 pt-8">
+        <footer className=" text-gray-700 px-12 py-4 pt-8">
               <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 text-sm lg:-mt-4 xl:mt-0">
         
               

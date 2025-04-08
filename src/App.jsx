@@ -4,6 +4,12 @@ import Nav from "./Components/Nav";
 import About from "./Pages/About"; // Import About page
 import Contact from "./Pages/Contact";
 import Verifidsn from "./Pages/Verifidsn";
+import VerifidsnPlus from "./Pages/VerifidsnPlus";
+import { SynchHr } from "./Pages/SynchHr";
+import Soldesk from "./Pages/Soldesk";
+import SolwayHR from "./Pages/SolwayHR";
+import SolwayInvoice from "./Pages/SolwayInvoice";
+import SolwayAssociation from "./Pages/SolwayAssociation";
 
 function App() {
   return (
@@ -41,6 +47,12 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/verifi-dsn" element={<Verifidsn />} />
+        <Route path="/verifi-dsn-plus" element={<VerifidsnPlus />} />
+        <Route path="/solway-synchronisation-hr" element={< SynchHr/>} />
+        <Route path="/soldesk" element={< Soldesk/>} />
+        <Route path="/solway-hr" element={< SolwayHR/>} />
+        <Route path="/solway-invoice" element={<SolwayInvoice/>} />
+        <Route path="/association-solway" element={<SolwayAssociation/>} />
       </Routes>
     </Router>
   );

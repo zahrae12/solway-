@@ -3,7 +3,7 @@ import React from 'react';
 const ControlDsnCard = ({ label, subtext, text }) => {
   return (
     <div className="flex flex-col">
-      <h3 className="text-xl font-bold mt-2">{label}</h3>
+      <h3 className="text-xl font-bold xl:-mt-20">{label}</h3>
       <p className="text-gray-700 mt-2 text-base font-inter leading-[24px]">
         {subtext}
       </p>

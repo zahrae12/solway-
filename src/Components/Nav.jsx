@@ -33,7 +33,7 @@ const Nav = () => {
   }, [isMoreOpen]);
 
   return (
-    <header className="pl-8 xl:pl-2 md:pl-10 py-8 absolute z-10 w-full">
+    <header className="pl-8 xl:pl-2 md:pl-10 py-4 absolute  w-full bg-white">
       <nav className="flex justify-between items-center max-container pl-0">
         {/* Logo */}
         <a href="/">
@@ -46,7 +46,7 @@ const Nav = () => {
         </a>
 
         {/* Desktop Menu */}
-        <ul className="flex-1 flex ml-8 sm:space-x-4 md:space-x-6 lg:space-x-6 xl:space-x-20 max-lg:hidden">
+        <ul className="flex-1 flex ml-8 sm:space-x-4  lg:space-x-10 xl:space-x-16 max-lg:hidden">
   {navLinks.map((item) => (
     <li key={item.label} className="relative">
       {item.label === "More" ? (

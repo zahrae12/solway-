@@ -11,7 +11,7 @@ const NosInnovations = () => {
       case "VERIF'DSN":
         return (
           <>
-            <div className="w-auto md:w-1/2 flex flex-col">
+            <div className="w-auto md:w-1/2 flex flex-col  ">
               <h2 className="text-xl font-bold mb-2">VERIF'DSN</h2>
               <p>
                 VERIF’DSN est un outil SAP qui permet de contrôler vos blocs DSN
@@ -89,7 +89,7 @@ const NosInnovations = () => {
     }`;
 
   return (
-    <section className="py-4 -mt-24 px-4 md:px-10 lg:px-0">
+    <section className="py-6 -mt-24 px-4 md:px-10 lg:px-6">
       {/* Title Section */}
       <div className="text-center">
         <h1 className="text-3xl font-extrabold">Nos Innovations</h1>

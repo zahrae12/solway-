@@ -5,11 +5,56 @@ import VerifidsnPlusFooter from '../Sections/VerifidsnPlus/VerifidsnPlusFooter'
 export const SynchHr = () => {
   return (
  <main>
-    <section className="lg:bg-[url('/src/assets/images/MIM.png')] bg-cover bg-no-repeat px-4 xl:py-12 bg-gray-100" >
+    <section className=" px-4 xl:py-12 bg-gray-100" >
+    <img
+          src="/src/assets/icons/yellowLeft.svg"
+          alt="dots left"
+         className="hidden lg:block absolute left-0 -top-1/6 mt-40 object-cover -ml-6 "
+  />
+  
+           {/* Right Dots */}
+         <img
+          src="/src/assets/icons/yellowRight.svg"
+          alt="dots right"
+         className="hidden lg:block absolute right-0 -top-1/6 mt-40  object-cover z-0"
+  />
+             <div className="relative z-10">
     <HrHero/>
+    </div>
     </section>
-    <section className="lg:bg-[url('/src/assets/images/synchro.png')] bg-cover bg-no-repeat padding bg-gray-100 " >
+    <section className=" padding bg-gray-100 " >
+   
+<img 
+  src="/src/assets/icons/yellowLeft.svg"
+  alt="dots left"
+  className="hidden xl:block absolute top-[250%] left-0  object-cover -ml-6"
+ 
+/>
+           {/* Right Dots */}
+         <img
+          src="/src/assets/icons/yellowRight.svg"
+          alt="dots right"
+         className="hidden xl:block absolute right-0 top-[250%]  object-cover -ml-6"
+  /> 
+
+
+   <img
+          src="/src/assets/icons/yellowLeft.svg"
+          alt="dots left"
+         className="hidden lg:block absolute left-0 -top-1/6 mt-72  object-cover -ml-6 "
+  />
+  
+           {/* Right Dots */}
+         <img
+          src="/src/assets/icons/yellowRight.svg"
+          alt="dots right"
+         className="hidden lg:block absolute right-0 -top-1/6 mt-72  object-cover z-0"
+  />
+   
+          
+             <div className="relative z-10">
    <SynchAcceuil/>
+   </div>
     </section>
     <section className=" bg-cover bg-no-repeat  pt-0 -mt-14 bg-gray-100">
                 <VerifidsnPlusFooter />

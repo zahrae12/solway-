@@ -2,8 +2,8 @@ import React from 'react'
 
 const InvoiceHero = () => {
   return (
-    <section className="xl:py-6 xl:pt-24 lg:pt-28 flex justify-center items-center lg:px-8 xl:px-0 pt-24 ">
-    <div className="relative bg-white lg:shadow-lg rounded-lg flex flex-col lg:flex-row justify-between items-center max-w-7xl w-full p-4 lg:p-8 gap-6 lg:gap-8 h-auto">
+    <section className="xl:py-6 xl:pt-24 lg:pt-28 flex justify-center items-center lg:px-9   pt-24 ">
+    <div className="relative bg-white lg:shadow-lg rounded-lg flex flex-col lg:flex-row justify-between items-center max-w-8xl w-full p-4 lg:p-8 gap-6 lg:gap-8 h-auto">
       
       {/* Left Side - Text Content */}
       <div className="flex-1 max-w-xl text-center">
@@ -16,7 +16,7 @@ const InvoiceHero = () => {
       {/* Right Side - Logo */}
       <div className="flex-none">
         <div className=" rounded-lg w-full flex justify-center">
-          <img src="/src/assets/images/voice.png" alt="Soldesk Logo" className="w-auto h-auto lg:w-65 lg:h-52" />
+          <img src="/src/assets/images/voice.png" alt="Soldesk Logo" className="w-auto h-auto lg:w-[300px] lg:h-[281px]" />
         </div>
       </div>
 

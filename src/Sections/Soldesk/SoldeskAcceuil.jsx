@@ -11,7 +11,7 @@ const SoldeskAcceuil = () => {
     </h1>
   
     {/* Main Content */}
-    <main className="w-auto xl:p-4 lg:pt-20 pt-40 bg-white shadow-lg px-4 rounded-md max-w-7xl mx-auto h-auto">
+    <main className="w-auto xl:p-4 lg:pt-20 pt-40 bg-white shadow-lg px-4 rounded-md max-w-8xl mx-auto h-auto">
       {/* Section 1: Écran d'accueil */}
       <section className="grid md:grid-cols-2 gap-8 items-center text-center lg:text-left">
         <div className=''>

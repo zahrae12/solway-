@@ -4,11 +4,11 @@ import replace from "../assets/images/replace.png";
 
 
 export const navLinks = [
-    { href: "#home", label: "Home" },
+    { href: "/", label: "Home" },
     { href: "#about-us", label: "Features" },
     { href: "#products", label: "Clients" },
     { href: "/contact", label: "Contact " },
-    { href: "#contact-us", label: "More" },
+    { href: "/#contact-us", label: "More" },
 ];
 export const activités = [
     {
@@ -67,7 +67,7 @@ export const innovations = [
         { name: "SOLDESK", path: "/soldesk" },
         { name: "SOLWAY HR", path: "/solway-hr" },
         { name: "SOLWAY INVOICE", path: "/solway-invoice" },
-        { name: "ASSOCIATION SOLWAY POUR LA SOLIDARITE", path: "/association-solway" }
+        { name: "ASSOCIATION SOLWAY POUR LA SOLIDARITÉ", path: "/association-solway" }
       ]
     },
     {

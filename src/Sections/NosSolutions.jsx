@@ -12,7 +12,7 @@ const NosSolutions = () => {
     </p>
   
     {/* Solutions Cards */}
-    <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-0 gap-0 mt-10 rounded-lg px-0 py-8 md:pt-2 pt-2">
+    <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-0 gap-0 mt-10 rounded-lg lg:px-9 py-8 md:pt-2 pt-2">
       {solutions.map((solution) => (
         <SolutionsCard key={solution.label} {...solution} />
       ))}

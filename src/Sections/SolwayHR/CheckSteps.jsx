@@ -43,9 +43,9 @@ const CheckSteps = () => {
         Check all steps
       </h2>
 
-      <div className="overflow-hidden mt-8">
+      <div className="overflow-hidden mt-8 ">
         <div
-          className={`flex transition-transform duration-500 ease-in-out`}
+          className={`flex transition-transform duration-500 ease-in-out `}
           style={{
             transform: isXL
               ? `translateX(-${currentStep * 80}%)`

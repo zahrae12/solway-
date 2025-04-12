@@ -19,7 +19,7 @@ const VerifidsnPlusHero = () => {
         <img
           src="src/assets/images/verif.png"
           alt="Buildings"
-          className="lg:w-full lg:h-auto w-auto h-auto object-cover md:object-contain lg:-mt-8 "
+          className="lg:w-[486px] lg:h-[269px] w-auto h-auto object-cover md:object-contain lg:-mt-8 "
         />
       </div>
     </section>

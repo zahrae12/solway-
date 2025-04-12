@@ -3,7 +3,7 @@ import LogosCard from "../assets/images/LogosCard.png";
 
 const Partenaires = () => {
   return (
-    <section className="-mt-32 pt-6 lg:pt-0">
+    <section className="-mt-16">
       <div className="w-auto flex flex-col xl:flex-row items-center gap-6 xl:gap-20 xl:-mr-8 xl:-ml-8 ">
         
         {/* Title */}

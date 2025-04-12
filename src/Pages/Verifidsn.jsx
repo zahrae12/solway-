@@ -10,13 +10,41 @@ const Verifidsn = () => {
        <section >
       <VerifidsnHero />
       </section>
-      <section className="bg-[url('/src/assets/images/cover.png')] bg-cover bg-no-repeat padding small-screen-bg md:bg-gray-50 bg-gray-50">
+      <section className=" padding small-screen-bg md:bg-gray-50 bg-gray-50">
+      <img
+          src="/src/assets/icons/yellowLeft.svg"
+          alt="dots left"
+         className="hidden lg:block absolute left-0 -top-1/6 mt-44  object-cover -ml-2 "
+  />
+  
+           {/* Right Dots */}
+         <img
+          src="/src/assets/icons/yellowRight.svg"
+          alt="dots right"
+         className="hidden lg:block absolute right-0 -top-1/6 mt-44  object-cover z-0 -mr-3"
+  />
+             <div className="relative z-10">
                 <ControlDsn />
+                </div>
               </section>
-              <section className="lg:bg-[url('/src/assets/images/containerrr.png')] bg-cover bg-no-repeat pt-8 lg:px-14 px-4 small-screen-bg  bg-white">
+              <section className=" pt-8 lg:px-14 px-4 small-screen-bg  bg-white">
+              <img
+          src="/src/assets/icons/yellowLeft.svg"
+          alt="dots left"
+         className="hidden lg:block absolute left-0 -top-1/6 mt-52  object-cover -ml-1 "
+  />
+  
+           {/* Right Dots */}
+         <img
+          src="/src/assets/icons/yellowRight.svg"
+          alt="dots right"
+         className="hidden lg:block absolute right-0 -top-1/6 mt-52  object-cover z-0"
+  />
+             <div className="relative z-10">
                 <AllSteps />
+                </div>
               </section>
-              <section className=" bg-cover bg-no-repeat lg:pt-10 pt-16 xl:bg-gray-50 md:bg-white">
+              <section className=" bg-cover bg-no-repeat lg:pt-6 pt-16  md:bg-white">
                 <VerifyFooter />
               </section>
       </main>

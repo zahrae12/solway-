@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMoreOpen, setIsMoreOpen] = useState(false);
-  const [isMobileMoreOpen, setIsMobileMoreOpen] = useState(false); // Separate state for mobile More menu
+  const [isMobileMoreOpen, setIsMobileMoreOpen] = useState(false); 
   const moreButtonRef = useRef(null);
   const dropdownRef = useRef(null);
 

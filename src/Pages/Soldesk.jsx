@@ -6,7 +6,7 @@ import VerifidsnPlusFooter from '../Sections/VerifidsnPlus/VerifidsnPlusFooter'
 
 const Soldesk = () => {
   return (
-    <main>
+    <main className="bg-gray-50">
     <section className=" px-4 xl:py-12 " >
     <img
           src="/src/assets/icons/frame.svg"

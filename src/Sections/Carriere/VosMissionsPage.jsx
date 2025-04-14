@@ -9,7 +9,7 @@ export const VosMissionsPage = () => {
       SOLWAY <br/> Vos Missions 
       </h2>
       <p className="text-[16px] mt-4 text-gray-700  font-inter text-center xl:text-left lg:max-w-xs">
-      Déposez vos propositions de missions,Nous nous occupons du reste
+      Déposez vos propositions de missions,<br/>Nous nous occupons du reste
 </p>
     </div>
   

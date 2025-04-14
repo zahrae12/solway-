@@ -3,7 +3,7 @@ import React from "react";
 
 const SolidaritySection = () => {
   return (
-   < section className="pt-12 xl:px-12 lg:px-4 ">
+   < section className=" pt-12 xl:px-12 lg:px-4 ">
    
 
     <div className="lg:bg-white relative w-full  md:p-8 lg:rounded-lg flex flex-col md:flex-row items-center lg:shadow-lg overflow-hidden">

@@ -2,7 +2,7 @@ import React from 'react'
 
 const FunctionnalityInvoice = () => {
   return (
-    <section className=" xl:-mt-24 mt-2 ">
+    <section className=" xl:-mt-24 mt-2 lg:-mt-12 ">
     {/* Title Section */}
     <h1 className="text-[36px]  font-extrabold font-inter text-center text-gray-850 lg:m-10 lg:mt-14 m-4 -mt-6">
     Fonctionnalités de SOLWAY Invoice

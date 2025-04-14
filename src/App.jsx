@@ -31,7 +31,7 @@ function App() {
               <img
           src="/src/assets/icons/frame.svg"
           alt="dots left"
-         className="hidden lg:block absolute left-0 -top-1/6 mt-20  object-cover  "
+         className="hidden xl:block absolute left-0 -top-1/6 mt-24  object-cover  "
   />
   
            {/* Right Dots */}
@@ -40,7 +40,7 @@ function App() {
           alt="dots right"
          className="hidden xl:block absolute right-0 -top-1/6 mt-24 object-cover z-0 "
   />
-             <div className="relative z-10 bg-gray-50">
+             <div className="relative z-10 ">
                 <NosActivites />
                 </div>
           </section>
@@ -58,7 +58,7 @@ function App() {
           alt="dots right"
          className="hidden xl:block absolute right-0 -top-1/6 mt-60 object-cover z-0"
   />
-             <div className="relative z-10 bg-gray-50">
+             <div className="relative z-10 ">
                 <NosInnovations />
                 </div>
               </section>
@@ -75,7 +75,7 @@ function App() {
           alt="dots right"
          className="hidden xl:block absolute right-0 -top-1/6 mt-36 object-cover z-0"
   />
-             <div className="relative z-10 bg-gray-50">
+             <div className="relative z-10 ">
                 <NosSolutions />
                 </div>
               </section>

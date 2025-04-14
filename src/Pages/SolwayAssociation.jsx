@@ -6,7 +6,7 @@ import { GreenSection } from '../Sections/Association/GreenSection'
 const SolwayAssociation = () => {
   return (
     <main className='lg:bg-gray-50'> 
-      <section className="relative px-8 xl:px-2 py-20 ">
+      <section className=" relative px-8 xl:px-2 py-20 ">
   {/* Left Dots */}
   <img
           src="/src/assets/icons/associ.svg"
@@ -22,7 +22,7 @@ const SolwayAssociation = () => {
   />
 
   {/* Content */}
-  <div className="relative z-10">
+  <div className="relative z-50">
     <SolidaritySection />
   </div>
 </section>

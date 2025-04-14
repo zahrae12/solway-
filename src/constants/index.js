@@ -5,10 +5,10 @@ import replace from "../assets/images/replace.png";
 
 export const navLinks = [
     { href: "/", label: "Home" },
-    { href: "#about-us", label: "Features" },
-    { href: "#products", label: "Clients" },
+    { href: "/about-us", label: "Features" },
+    { href: "/products", label: "Clients" },
     { href: "/contact", label: "Contact " },
-    { href: "/#contact-us", label: "More" },
+    { href: "/more", label: "More" },
 ];
 export const activités = [
     {

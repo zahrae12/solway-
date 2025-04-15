@@ -15,7 +15,7 @@ const HeroAbout = () => {
   {/* Right Side */}
   <div className="lg:w-1/2 w-full h-[264px] relative overflow-hidden sm:h-[600px] lg:h-[720px] -mt-14">
     <img
-      src="src/assets/images/banner.png"
+      src="assets/images/banner.png"
       alt="Buildings"
       className="w-full h-full object-cover transform lg:-skew-x-6 origin-bottom-left transition-all duration-300 ease-in-out"
     />

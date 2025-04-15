@@ -16,7 +16,7 @@ const InvoiceHero = () => {
       {/* Right Side - Logo */}
       <div className="flex-none">
         <div className=" rounded-lg w-full flex justify-center">
-          <img src="/src/assets/images/voice.png" alt="Soldesk Logo" className="w-auto h-auto lg:w-[300px] lg:h-[281px]" />
+          <img src="assets/images/voice.png" alt="Soldesk Logo" className="w-auto h-auto lg:w-[300px] lg:h-[281px]" />
         </div>
       </div>
 

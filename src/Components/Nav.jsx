@@ -39,7 +39,7 @@ const Nav = () => {
         {/* Logo */}
         <a href="/">
           <img
-            src="src/assets/images/image 4.png"
+            src="assets/images/image 4.png"
             alt="logo"
             width={130}
             height={29}
@@ -104,7 +104,7 @@ const Nav = () => {
         {/* Mobile Menu Toggle Button */}
         <div>
           <img
-            src="src/assets/icons/hamburger.svg"
+            src="assets/icons/hamburger.svg"
             width={25}
             height={25}
             className="hidden max-lg:block cursor-pointer mr-4"
@@ -119,7 +119,7 @@ const Nav = () => {
           <div className="flex justify-between items-center">
             {/* Logo */}
             <img
-              src="src/assets/images/image 4.png"
+              src="assets/images/image 4.png"
               alt="logo"
               width={130}
               height={29}
@@ -165,7 +165,7 @@ const Nav = () => {
     <div className="flex justify-between items-center border-b pb-4">
       {/* Logo */}
       <img
-        src="src/assets/images/image 4.png"
+        src="assets/images/image 4.png"
         alt="logo"
         width={130}
         height={29}

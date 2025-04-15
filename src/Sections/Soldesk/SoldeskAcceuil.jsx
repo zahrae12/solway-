@@ -24,7 +24,7 @@ const SoldeskAcceuil = () => {
 Grâce à ce suivi détaillé, les utilisateurs peuvent voir précisément où en est leur demande et recevoir des mises à jour instantanées à chaque changement d’état
           </p>
         </div>
-        <img src="/src/assets/images/func1.png" alt="Écran d'accueil" className="w-full rounded-lg  pt-8 lg:-mt-14 xl:mt-0 " />
+        <img src="assets/images/func1.png" alt="Écran d'accueil" className="w-full rounded-lg  pt-8 lg:-mt-14 xl:mt-0 " />
       </section>
   
       {/* Section 2: Highly Effective Solutions */}
@@ -40,7 +40,7 @@ Cette communication bidirectionnelle et transparente garantit que toutes les par
           </p>
          
         </div>
-        <img src="/src/assets/images/func2.png" alt="Options de Synchronisation" className="w-full rounded-lg  lg:mt-4 xl:mt-0" />
+        <img src="assets/images/func2.png" alt="Options de Synchronisation" className="w-full rounded-lg  lg:mt-4 xl:mt-0" />
       </section>
   
       
@@ -57,7 +57,7 @@ Cette communication bidirectionnelle et transparente garantit que toutes les par
            Cette simplicité d’utilisation permet de gagner du temps et d’assurer que toutes les informations nécessaires sont immédiatement disponibles, ce qui facilite une gestion rapide et précise des demandes.
           </p>
         </div>
-        <img src="/src/assets/images/func3.png" alt="Résultats" className="w-full rounded-lg  lg:pr-20 -pt-4 -mt-8 pb-22 lg:pb-0" />
+        <img src="assets/images/func3.png" alt="Résultats" className="w-full rounded-lg  lg:pr-20 -pt-4 -mt-8 pb-22 lg:pb-0" />
       </section>
     </main>
   </section>

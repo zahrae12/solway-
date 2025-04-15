@@ -16,7 +16,7 @@ const VerifidsnHero = () => {
       {/* Right side */}
       <div className="w-full lg:w-1/2 flex justify-center xl:justify-end xl:p-8 lg:pt-28 lg:pr-14 xl:pr-20  ">
         <img
-          src="src/assets/images/verify.png"
+          src="assets/images/verify.png"
           alt="Buildings"
           className="lg:w-[486px] lg:h-[269px] mb-6 w-auto h-auto object-cover md:object-contain lg:-mt-8 "
         />

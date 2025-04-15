@@ -5,7 +5,7 @@ const ActivityCard = ({label,subtext}) => {
   return (
     <div className=' bg-white p-4  mt-0 '>
       <div className="flex items-center">
-        <img src="src/assets/icons/Check.svg" alt="Check Icon" className="mr-2" />
+        <img src="assets/icons/Check.svg" alt="Check Icon" className="mr-2" />
         <h3 className="text-xl font-extrabold  ">{label}</h3>
       </div>
       <p

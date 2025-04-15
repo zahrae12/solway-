@@ -30,7 +30,7 @@ const NosInnovations = () => {
             <div className="w-full md:w-1/2 flex justify-end">
               <img
                 className="w-80 md:w-96 lg:w-[450px] h-56 md:h-64 lg:h-[300px] object-cover rounded-2xl"
-                src="src/assets/images/image 5.png"
+                src="assets/images/image 5.png"
                 alt="VERIF'DSN"
               />
             </div>

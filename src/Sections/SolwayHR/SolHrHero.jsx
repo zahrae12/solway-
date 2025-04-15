@@ -16,7 +16,7 @@ const SolHrHero = () => {
       {/* Right Side - Logo */}
       <div className="flex-none">
         <div className=" rounded-lg w-full flex justify-center">
-          <img src="/src/assets/images/solHrPic.png" alt="Soldesk Logo" className="w-auto h-auto lg:w-[280px] lg:h-[240px]" />
+          <img src="assets/images/solHrPic.png" alt="Soldesk Logo" className="w-auto h-auto lg:w-[280px] lg:h-[240px]" />
         </div>
       </div>
 

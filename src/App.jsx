@@ -29,14 +29,14 @@ function App() {
               </section>
               <section className="">
               <img
-          src="/src/assets/icons/frame.svg"
+          src="assets/icons/frame.svg"
           alt="dots left"
          className="hidden xl:block absolute left-0 -top-1/6 mt-24  object-cover  "
   />
   
            {/* Right Dots */}
          <img
-          src="/src/assets/icons/frameleft.svg"
+          src="assets/icons/frameleft.svg"
           alt="dots right"
          className="hidden xl:block absolute right-0 -top-1/6 mt-24 object-cover z-0 "
   />
@@ -47,14 +47,14 @@ function App() {
           {/* section dial Nos inovations */}
               <section className="padding">
               <img
-          src="/src/assets/icons/yellowLeft.svg"
+          src="assets/icons/yellowLeft.svg"
           alt="dots left"
          className="hidden xl:block absolute left-0 -top-1/6 mt-60  object-cover -ml-1 "
   />
   
            {/* Right Dots */}
          <img
-          src="/src/assets/icons/FrameRightt.svg"
+          src="assets/icons/FrameRightt.svg"
           alt="dots right"
          className="hidden xl:block absolute right-0 -top-1/6 mt-60 object-cover z-0"
   />
@@ -64,14 +64,14 @@ function App() {
               </section>
               <section className="padding">
               <img
-          src="/src/assets/icons/yellowLeft.svg"
+          src="assets/icons/yellowLeft.svg"
           alt="dots left"
          className="hidden xl:block absolute left-0 -top-1/6 mt-36  object-cover  "
   />
   
            {/* Right Dots */}
          <img
-          src="/src/assets/icons/yellowRight.svg"
+          src="assets/icons/yellowRight.svg"
           alt="dots right"
          className="hidden xl:block absolute right-0 -top-1/6 mt-36 object-cover z-0"
   />
@@ -84,14 +84,14 @@ function App() {
               </section>
               <section className="padding">
               <img
-          src="/src/assets/icons/yellowLeft.svg"
+          src="assets/icons/yellowLeft.svg"
           alt="dots left"
          className="hidden xl:block absolute left-0 -top-1/6 -mt-16  object-cover -ml-2 "
   />
   
            {/* Right Dots */}
          <img
-          src="/src/assets/icons/yellowRight.svg"
+          src="assets/icons/yellowRight.svg"
           alt="dots right"
          className="hidden xl:block absolute right-0 -top-1/6 -mt-16 object-cover z-0"
   />

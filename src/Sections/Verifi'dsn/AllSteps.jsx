@@ -4,17 +4,17 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const steps = [
   {
     title: "Etape 1 : Paramétrage Blocs DSN",
-    image: "src/assets/images/parametrage.png", 
+    image: "assets/images/parametrage.png", 
     description: "Les blocs DSN à contrôler",
   },
   {
     title: "Etape 2 : Suivi DSN",
-    image: "src/assets/images/third.png", 
+    image: "assets/images/third.png", 
     description: "Vérification des données DSN",
   },
   {
     title: "Etape 2 : Suivi DSN",
-    image: "src/assets/images/third.png", 
+    image: "assets/images/third.png", 
     description: "Vérification des données DSN",
   },
 ];

@@ -21,15 +21,15 @@ const ControlDsn = () => {
       {/* Buttons Section */}
       <div className="mt-10 flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center ">
   <button className="border border-gray-300 text-black lg:py-2  py-3 rounded-lg font-semibold w-full  flex items-center justify-center gap-2">
-    <img src="src/assets/icons/layer.png" alt="Paramétrage" className="w-5 h-5" />
+    <img src="assets/icons/layer.png" alt="Paramétrage" className="w-5 h-5" />
     Paramétrage des blocs DSN
   </button>
   <button className="border bg-yellow-500 text-white lg:py-2  py-3 rounded-lg font-semibold w-full  flex items-center justify-center gap-2">
-    <img src="src/assets/icons/data.png" alt="Sélection" className="w-5 h-5" />
+    <img src="assets/icons/data.png" alt="Sélection" className="w-5 h-5" />
     Sélection des données
   </button>
   <button className="border border-gray-300 text-black lg:py-2 py-3 rounded-lg font-semibold w-full  flex items-center justify-center gap-2">
-    <img src="src/assets/icons/shield.png" alt="Exécution" className="w-5 h-5" />
+    <img src="assets/icons/shield.png" alt="Exécution" className="w-5 h-5" />
     Exécution du contrôle
   </button>
 </div>
@@ -48,7 +48,7 @@ const ControlDsn = () => {
         <div className="w-full lg:w-1/2 flex justify-center lg:justify-end md:-mt-12 xl:mt-0   ">
           <img
             className="max-w-full h-auto object-contain rounded-2xl"
-            src="src/assets/images/verifidsn.png"
+            src="assets/images/verifidsn.png"
             alt="VERIF'DSN"
           />
         </div>

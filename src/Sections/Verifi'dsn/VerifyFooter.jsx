@@ -25,7 +25,7 @@ const VerifyFooter = () => {
             <div className="md:w-1/2 lg:mt-6 mt-10 flex justify-end">
               <img
                 className="w-[548px]  h-[280px]  rounded-lg shadow-lg"
-                src="src/assets/images/image 5.png"
+                src="assets/images/image 5.png"
                 title="YouTube video"
                
               />

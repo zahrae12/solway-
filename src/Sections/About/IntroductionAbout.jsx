@@ -39,7 +39,7 @@ const IntroductionAbout = () => {
   <h2 className="text-[30px] font-extrabold font-inter sm:text-[24px] leading-[32px] text-gray-800 lg:pt-4 pt-16">
     Fondateur de SOLWAY Consulting & Services
   </h2>
-  <img src="src/assets/images/ceo.png" alt="Amine Hbibiy" className="w-full h-auto mt-4 pt-6 lg:pt-0 rounded-lg" />
+  <img src="assets/images/ceo.png" alt="Amine Hbibiy" className="w-full h-auto mt-4 pt-6 lg:pt-0 rounded-lg" />
   <h3 className="text-[30px] font-bold font-inter leading-[32px] mt-4 pt-6 lg:pt-0">Amine HIBIBIY</h3>
   <p className="mt-4 text-xl font-inter font-normal text-gray-700">
     Avec plus de 10 ans d’expertise, il a contribué à de nombreux projets RH ayant permis de développer une expertise solide et polyvalente dans la gestion des ressources humaines.
@@ -53,7 +53,7 @@ const IntroductionAbout = () => {
   <h2 className="text-[30px] font-bold text-gray-800 pt-6 lg:mt-0 mt-12">Notre partenariat avec l’éditeur SAP</h2>
   <div className="flex justify-center mt-4">
     <img 
-      src="src/assets/images/sap.png" 
+      src="assets/images/sap.png" 
       alt="SAP Silver Partner" 
       className="w-[400px] h-[236px] shadow-lg mt-12 lg:mt-0 rounded-lg"
     />

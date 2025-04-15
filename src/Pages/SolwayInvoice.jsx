@@ -7,14 +7,14 @@ const SolwayInvoice = () => {
     <main className='bg-gray-50'>
        <section className=" px-4 xl:py-12 lg:bg-gray-50 bg-white " >
        <img
-          src="/src/assets/icons/frame.svg"
+          src="assets/icons/frame.svg"
           alt="dots left"
          className="hidden lg:block absolute left-0 -top-1/6 mt-28  object-cover -ml-6 "
   />
   
            {/* Right Dots */}
          <img
-          src="/src/assets/icons/soldeskframe.svg"
+          src="assets/icons/soldeskframe.svg"
           alt="dots right"
          className="hidden lg:block absolute right-0 -top-1/6 mt-28  object-cover -mr-4 z-0"
   />
@@ -22,28 +22,28 @@ const SolwayInvoice = () => {
        </section>
        <section className=" padding bg-gray-50 " >
        <img
-          src="/src/assets/icons/yellowLeft.svg"
+          src="assets/icons/yellowLeft.svg"
           alt="dots left"
          className="hidden lg:block absolute left-0 -top-1/6 mt-28  object-cover -ml-6 "
   />
   
            {/* Right Dots */}
          <img
-          src="/src/assets/icons/yellowRight.svg"
+          src="assets/icons/yellowRight.svg"
           alt="dots right"
          className="hidden lg:block absolute right-0 -top-1/6 mt-28  object-cover z-0"
   />
 
 
 <img 
-  src="/src/assets/icons/yellowLeft.svg"
+  src="assets/icons/yellowLeft.svg"
   alt="dots left"
   className="hidden xl:block absolute top-[210%] left-0  object-cover  -ml-6"
  
 />
            {/* Right Dots */}
          <img
-          src="/src/assets/icons/soldeskframe.svg"
+          src="assets/icons/soldeskframe.svg"
           alt="dots right"
          className="hidden xl:block absolute right-0 top-[210%]  object-cover -mr-5"
   /> 

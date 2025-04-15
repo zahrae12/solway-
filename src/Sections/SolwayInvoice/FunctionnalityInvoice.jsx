@@ -19,7 +19,7 @@ const FunctionnalityInvoice = () => {
           </p>
          
         </div>
-        <img src="/src/assets/images/userManagement.png" alt="Écran d'accueil" className="w-full rounded-lg  pt-8 lg:-mt-14 xl:mt-0 " />
+        <img src="assets/images/userManagement.png" alt="Écran d'accueil" className="w-full rounded-lg  pt-8 lg:-mt-14 xl:mt-0 " />
       </section>
   
       {/* Section 2: Highly Effective Solutions */}
@@ -32,7 +32,7 @@ const FunctionnalityInvoice = () => {
          
          
         </div>
-        <img src="/src/assets/images/factures.png" alt="Options de Synchronisation" className="w-full rounded-lg  lg:-mt-8" />
+        <img src="assets/images/factures.png" alt="Options de Synchronisation" className="w-full rounded-lg  lg:-mt-8" />
       </section>
   
       
@@ -45,7 +45,7 @@ const FunctionnalityInvoice = () => {
           Suivez facilement le paiement des factures avec des outils de suivi en temps réel. Recevez des notifications et des rappels automatiques pour les factures en attente et les paiements à venir.
           </p>
         </div>
-        <img src="/src/assets/images/factures.png" alt="Résultats" className="w-full rounded-lg  lg:pr-20  mt-8" />
+        <img src="assets/images/factures.png" alt="Résultats" className="w-full rounded-lg  lg:pr-20  mt-8" />
       </section>
 
      

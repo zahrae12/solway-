@@ -25,7 +25,7 @@ const Functionnalities = () => {
         <li>Sortie</li>
       </ul>
            </div>
-           <img src="/src/assets/images/admin.png" alt="Écran d'accueil" className="w-full rounded-lg  pt-8 lg:-mt-14 xl:mt-0 " />
+           <img src="assets/images/admin.png" alt="Écran d'accueil" className="w-full rounded-lg  pt-8 lg:-mt-14 xl:mt-0 " />
          </section>
      
          {/* Section 2s */}
@@ -42,7 +42,7 @@ const Functionnalities = () => {
       </ul>
             
            </div>
-           <img src="/src/assets/images/absence.png" alt="Options de Synchronisation" className="w-full rounded-lg  lg:mt-4 xl:mt-0" />
+           <img src="assets/images/absence.png" alt="Options de Synchronisation" className="w-full rounded-lg  lg:mt-4 xl:mt-0" />
          </section>
      
          
@@ -60,7 +60,7 @@ const Functionnalities = () => {
         
       </ul>
            </div>
-           <img src="/src/assets/images/temps.png" alt="Résultats" className="w-full rounded-lg  lg:pr-20 lg:-pt-4 lg:mt-2 mt-14" />
+           <img src="assets/images/temps.png" alt="Résultats" className="w-full rounded-lg  lg:pr-20 lg:-pt-4 lg:mt-2 mt-14" />
          </section>
 
           {/* Section 2: Highly Effective Solutions */}
@@ -79,7 +79,7 @@ const Functionnalities = () => {
       </ul>
             
            </div>
-           <img src="/src/assets/images/paie.png" alt="Options de Synchronisation" className="w-full rounded-lg  lg:mt-4 xl:mt-0 mt-4" />
+           <img src="assets/images/paie.png" alt="Options de Synchronisation" className="w-full rounded-lg  lg:mt-4 xl:mt-0 mt-4" />
          </section>
          
        </main>

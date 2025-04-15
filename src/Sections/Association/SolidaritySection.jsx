@@ -22,7 +22,7 @@ const SolidaritySection = () => {
       </div>
       <div className="md:w-1/3 flex  justify-end ">
         <img
-          src="src/assets/images/solidarity.png"
+          src="assets/images/solidarity.png"
           alt="Association Solway Logo"
           className="w-65 md:w-65 lg:w-58 border border-green-400 rounded-lg mt-6 lg:mt-0"
         />

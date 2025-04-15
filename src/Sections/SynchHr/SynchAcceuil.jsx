@@ -15,7 +15,7 @@ export const SynchAcceuil = () => {
 </p>
 
       </div>
-      <img src="/src/assets/images/acceuil.png" alt="Écran d'accueil" className="w-full rounded-lg shadow-md" />
+      <img src="assets/images/acceuil.png" alt="Écran d'accueil" className="w-full rounded-lg shadow-md" />
     </section>
 
   {/* Section 2: Highly Effective Solutions */} 
@@ -53,7 +53,7 @@ export const SynchAcceuil = () => {
       ].map((item, index) => (
         <li key={index} className="flex items-center gap-2">
           <img
-            src="/src/assets/icons/vector.svg"
+            src="assets/icons/vector.svg"
             alt="Check icon"
             className="w-5 h-5"
           />
@@ -65,7 +65,7 @@ export const SynchAcceuil = () => {
 
   {/* First Image */}
   <img
-    src="/src/assets/images/effective.png"
+    src="assets/images/effective.png"
     alt="Options de Synchronisation"
     className="w-full rounded-lg shadow-md h-auto"
   />
@@ -74,7 +74,7 @@ export const SynchAcceuil = () => {
 {/* Second Image Section */}
 <section className="grid md:grid-cols-2 gap-8  lg:-mt-24 mt-20 sm:mt-0">
   <img
-    src="/src/assets/images/secEffective.png"
+    src="assets/images/secEffective.png"
     alt="Options de la synchronisation"
     className="w-full rounded-lg shadow-md xl:-mt-8 "
   />
@@ -90,7 +90,7 @@ export const SynchAcceuil = () => {
     </p>
   </div>
   <img 
-    src="/src/assets/images/resultat.png" 
+    src="assets/images/resultat.png" 
     alt="Résultats" 
     className="w-full rounded-lg shadow-md lg:pr-20  p-4 pb-8 pt-12 xl:pt-0 lg:pt-12 xl:-mt-6" 
   />

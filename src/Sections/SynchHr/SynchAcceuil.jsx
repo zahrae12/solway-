@@ -53,8 +53,8 @@ export const SynchAcceuil = () => {
       ].map((item, index) => (
         <li key={index} className="flex items-center gap-2">
           <img
-            src="assets/icons/vector.svg"
-            alt="Check icon"
+            src="assets/icons/CheckMark.svg"
+            alt=""
             className="w-5 h-5"
           />
           <strong>{item}</strong>

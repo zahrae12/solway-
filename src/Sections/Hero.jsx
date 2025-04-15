@@ -36,7 +36,7 @@ const Hero = () => {
       <img
   src="assets/images/skyscraper.jpeg"
   alt="Buildings"
-  className="w-full h-full object-cover transform lg:-skew-x-6 origin-bottom-left transition-all duration-300 ease-in-out z-[60] relative"
+  className="w-full h-full object-cover transform lg:-skew-x-6 origin-bottom-left transition-all duration-300 ease-in-out lg:z-[60] relative"
 />
 
       </div>

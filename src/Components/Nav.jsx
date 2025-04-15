@@ -4,7 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 import { navLinks, More } from "../constants";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import MoreDropdown from "./moreDropDown";
+import MoreDropdown from "./MoreDropDown";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

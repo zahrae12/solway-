@@ -27,20 +27,20 @@ const SolwayHR = () => {
        </section>
        <section className=" padding bg-gray-50 " >
        <img
-          src="assets/icons/yellowLeft.svg"
+          src="assets/icons/frame.svg"
           alt="dots left"
          className="hidden lg:block absolute left-0 -top-1/6 mt-48  object-cover -ml-6 "
   />
   
            {/* Right Dots */}
          <img
-          src="assets/icons/yellowRight.svg"
+          src="assets/icons/soldeskframe.svg"
           alt="dots right"
          className="hidden lg:block absolute right-0 -top-1/6 mt-48  object-cover z-0"
   />
 
 <img 
-  src="assets/icons/yellowLeft.svg"
+  src="assets/icons/frame.svg"
   alt="dots left"
   className="hidden xl:block absolute top-[250%] left-0  object-cover -mt-32 -ml-6"
  
@@ -53,7 +53,7 @@ const SolwayHR = () => {
   /> 
 
 <img 
-  src="assets/icons/yellowLeft.svg"
+  src="assets/icons/frame.svg"
   alt="dots left"
   className="hidden xl:block absolute top-[330%] left-0  object-cover -mt-32 -ml-6"
  

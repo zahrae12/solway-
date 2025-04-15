@@ -12,14 +12,14 @@ const Verifidsn = () => {
       </section>
       <section className=" padding small-screen-bg md:bg-gray-50 bg-gray-50">
       <img
-          src="assets/icons/yellowLeft.svg"
+          src="assets/icons/frame.svg"
           alt="dots left"
          className="hidden lg:block absolute left-0 -top-1/6 mt-44  object-cover -ml-2 "
   />
   
            {/* Right Dots */}
          <img
-          src="assets/icons/yellowRight.svg"
+          src="assets/icons/soldeskframe.svg"
           alt="dots right"
          className="hidden lg:block absolute right-0 -top-1/6 mt-44  object-cover z-0 -mr-3"
   />
@@ -29,14 +29,14 @@ const Verifidsn = () => {
               </section>
               <section className=" pt-8 lg:px-14 px-4 small-screen-bg  bg-white">
               <img
-          src="assets/icons/yellowLeft.svg"
+          src="assets/icons/frame.svg"
           alt="dots left"
          className="hidden lg:block absolute left-0 -top-1/6 mt-52  object-cover -ml-1 "
   />
   
            {/* Right Dots */}
          <img
-          src="assets/icons/yellowRight.svg"
+          src="assets/icons/soldeskframe.svg"
           alt="dots right"
          className="hidden lg:block absolute right-0 -top-1/6 mt-52  object-cover z-0"
   />

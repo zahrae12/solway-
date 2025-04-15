@@ -28,7 +28,7 @@ const NosOffres = () => {
               <div>13/06/2025</div>
             </div>
             <div>
-              <img src="src/assets/icons/Timer.svg" alt="Timer" className="w-6 h-6 mb-2" />
+              <img src="assets/icons/Timer.svg" alt="Timer" className="w-6 h-6 mb-2" />
               <div className="text-gray-500 text-xs">EMPLOI EXPIRE ON:</div>
               <div>13/10/2025</div>
             </div>

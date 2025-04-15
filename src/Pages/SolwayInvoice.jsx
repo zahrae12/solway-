@@ -5,7 +5,7 @@ import VerifidsnPlusFooter from '../Sections/VerifidsnPlus/VerifidsnPlusFooter'
 const SolwayInvoice = () => {
   return (
     <main className='bg-gray-50'>
-       <section className=" px-4 xl:py-12 " >
+       <section className=" px-4 xl:py-12 lg:bg-gray-50 bg-white " >
        <img
           src="/src/assets/icons/frame.svg"
           alt="dots left"

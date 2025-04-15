@@ -4,6 +4,7 @@ import { FiArrowRight } from "react-icons/fi";
 import { navLinks, More } from "../constants";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import MoreDropdown from "./moreDropDown";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,7 +34,7 @@ const Nav = () => {
   }, [isMoreOpen]);
 
   return (
-    <header className="pl-8 xl:pl-2 md:pl-10 py-4 absolute  w-full bg-white">
+    <header className="pl-8 xl:pl-2 md:pl-10 py-4 fixed top-0 left-0 w-full bg-white z-50">
       <nav className="flex justify-between items-center max-container pl-0">
         {/* Logo */}
         <a href="/">
@@ -70,33 +71,32 @@ const Nav = () => {
 
       {/* More Dropdown - Using fixed positioning */}
       {item.label === "More" && isMoreOpen && (
-        <div
-          ref={dropdownRef}
-          className="fixed bg-white bg-opacity-100 shadow-lg rounded-lg p-6 lg:-ml-32 mr-12 md:mt-2 z-50"
-          style={{
-            top: moreButtonRef.current ? moreButtonRef.current.getBoundingClientRect().bottom + 10 + "px" : "0",
-            left: moreButtonRef.current ? moreButtonRef.current.getBoundingClientRect().left - 100 + "px" : "0",
-          }}
-        >
-          <div className="flex flex-row gap-4">
-            {More.map((category) => (
-              <div key={category.label} className="mb-0">
-                <h4 className="font-semibold text-gray-900 px-4">{category.label}</h4>
-                <ul className="mt-6">
-  {category.subtext.map((subItem, index) => (
-    <li key={index} className="py-3 px-4 hover:text-black cursor-pointer">
-      <Link to={subItem.path} className="text-gray-700 text-sm hover:underline">
-        {subItem.name}
-      </Link>
-    </li>
-  ))}
-</ul>
-
-              </div>
+  <MoreDropdown
+    position={{
+      top: `${moreButtonRef.current?.getBoundingClientRect().bottom + 10}px`,
+      left: `${moreButtonRef.current?.getBoundingClientRect().left - 100}px`,
+    }}
+    dropdownRef={dropdownRef}
+  >
+    <div className="flex flex-row gap-4">
+      {More.map((category) => (
+        <div key={category.label} className="mb-0">
+          <h4 className="font-semibold text-gray-900 px-4">{category.label}</h4>
+          <ul className="mt-6">
+            {category.subtext.map((subItem, index) => (
+              <li key={index} className="py-3 px-4 hover:text-black cursor-pointer">
+                <Link to={subItem.path} className="text-gray-700 text-sm hover:underline">
+                  {subItem.name}
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
-      )}
+      ))}
+    </div>
+  </MoreDropdown>
+)}
+
     </li>
   ))}
 </ul>

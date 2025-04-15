@@ -2,7 +2,7 @@ import React from 'react'
 
 const SolHrHero = () => {
   return (
-    <section className="  lg:pt-20 flex justify-center items-center lg:px-9  pt-24">
+    <section className="  lg:pt-20 flex justify-center items-center lg:px-9  pt-12">
     <div className="relative bg-white lg:shadow-lg rounded-lg flex flex-col lg:flex-row justify-between items-center max-w-8xl w-full p-12 lg:p-10 gap-6 lg:gap-8 h-auto">
       
       {/* Left Side - Text Content */}

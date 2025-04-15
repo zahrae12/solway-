@@ -22,7 +22,7 @@ const SolwayAssociation = () => {
   />
 
   {/* Content */}
-  <div className="relative z-50">
+  <div className="relative z-10">
     <SolidaritySection />
   </div>
 </section>

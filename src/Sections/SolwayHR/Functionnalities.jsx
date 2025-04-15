@@ -30,7 +30,7 @@ const Functionnalities = () => {
      
          {/* Section 2s */}
          <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 pt-10">
-           <div className="lg:order-1 order-none mt-14">
+           <div className="lg:order-1 order-none lg:mt-14">
              <h2 className=" text-[32px] font-bold lg:text-left text-center">Gestion des absences</h2>
              <p className="text-gray-950 mt-4 font-medium font-inter text-left text-[18px] ">
              Avec SOLWAY HR, la gestion des absences devient simple et efficace. Notre plateforme vous permet de :

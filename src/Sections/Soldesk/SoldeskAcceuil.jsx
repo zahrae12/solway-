@@ -13,7 +13,7 @@ const SoldeskAcceuil = () => {
     {/* Main Content */}
     <main className="w-auto xl:p-4 md:p-6 lg:pt-20 pt-40 bg-white shadow-lg px-4 rounded-md max-w-8xl mx-auto h-auto">
       {/* Section 1: Écran d'accueil */}
-      <section className="grid md:grid-cols-2 gap-8 items-center text-center lg:text-left">
+      <section className="grid md:grid-cols-2 gap-8 items-center  lg:text-left">
         <div className=''>
           <h2 className="text-2xl font-bold xl:-mt-36 lg:-mt-12 -mt-32 text-center lg:text-left">SUIVI EN TEMPS RÉEL</h2>
           <p className="text-gray-700 mt-2 font-medium font-inter">

@@ -5,7 +5,7 @@ import VerifidsnPlusFooter from '../Sections/VerifidsnPlus/VerifidsnPlusFooter'
 export const SynchHr = () => {
   return (
  <main>
-    <section className=" px-4 xl:py-12 bg-gray-100" >
+    <section className=" px-4 xl:py-12 bg-gray-100  " >
     <img
           src="/src/assets/icons/yellowLeft.svg"
           alt="dots left"

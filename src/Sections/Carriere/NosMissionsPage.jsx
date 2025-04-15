@@ -2,10 +2,10 @@ import React from 'react'
 
 const NosMissionsPage = () => {
   return (
-    <section className="flex flex-col xl:flex-row  md:items-center xl:items-start gap-20 lg:px-10 px-6  py-32 bg-gray-50">
+    <section className="flex flex-col xl:flex-row  md:items-center xl:items-start gap-20 lg:px-10   py-32 bg-gray-50">
     {/* Left Side */}
-    <div className="flex flex-col md:w-1/2  text-wrap  ">
-      <h2 className="text-[30px] font-bold text-center xl:text-left lg:max-w-lg   ">
+    <div className="flex flex-col md:w-1/2  text-wrap  px-12 lg:px-0">
+      <h2 className="text-[30px] font-bold text-center xl:text-left lg:max-w-lg max-w-xs leading-tight   ">
       SOLWAY <br/> Nos Missions <br/>Déposez votre candidature
       </h2>
       <p className="text-[16px] mt-4 text-gray-700  font-inter text-center xl:text-left">
@@ -14,7 +14,7 @@ const NosMissionsPage = () => {
     </div>
   
     {/* Right Side */}
-    <div className="-mt-6 xl:mt-0  ">
+    <div className="-mt-6 xl:mt-0 px-6 lg:px-0">
     <div className="bg-white shadow-lg rounded-lg border border-gray-300 p-4 lg:p-10 lg:pl-10 ">
             <form className="space-y-4 lg:w-[523px] lg:h-auto w-[100%] ">
                 <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
@@ -46,8 +46,13 @@ const NosMissionsPage = () => {
 
                 
                     <div>
-                        <label className="block text-gray-700 font-medium mb-2">Niveau d'expérience : (requis)</label>
-                        <input type="text" className="border p-2 w-full rounded border-gray-400" placeholder='Stage' />
+                    <label className="block text-gray-700 font-medium mb-2">Niveau d'expérience : (requis)</label>
+                        <select type="text" className="border p-2 w-full rounded border-gray-400" placeholder='' >
+                        <option value="">-- Please choose an option --</option>
+                       <option value="stage">0-1</option>
+                       <option value="cdI">+3years</option>
+                       <option value="cdd">+5years </option>
+        </select>
                     </div>
                     <div>
                         <label className="block text-gray-700 font-medium mb-2">TJM (requis)</label>

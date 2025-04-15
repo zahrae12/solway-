@@ -22,7 +22,7 @@ export const SynchAcceuil = () => {
 <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
   {/* Text First on Small Screens */}
   <div className="lg:order-1 order-none xl:mt-20">
-    <h2 className="lg:text-[30px] text-[28px]  font-bold text-center lg:text-left lg:-mt-2 mt-8">Highly effective solutions</h2>
+    <h2 className="lg:text-[30px] text-[28px]  font-bold text-center lg:text-left lg:mt-4 mt-8">Highly effective solutions</h2>
     <p className="text-gray-950 lg:mt-2 mt-6 font-medium font-inter">
       Cet écran vous permet de sélectionner les matricules à synchroniser.
     </p>
@@ -43,7 +43,7 @@ export const SynchAcceuil = () => {
     </p>
 
     <p className="text-gray-950 mt-6 font-medium font-inter text-center lg:text-left">Les modules concernés sont :</p>
-    <ul className="mt-2 text-gray-950 gap-4 space-y-3 ">
+    <ul className="mt-6 text-gray-950 gap-4 space-y-3 ">
       {[
         "Administration du personnel (PA)",
         "Gestion organisationnelle",
@@ -67,16 +67,16 @@ export const SynchAcceuil = () => {
   <img
     src="/src/assets/images/effective.png"
     alt="Options de Synchronisation"
-    className="w-full rounded-lg shadow-md"
+    className="w-full rounded-lg shadow-md h-auto"
   />
 </section>
 
 {/* Second Image Section */}
-<section className="grid md:grid-cols-2 gap-8 xl:mt-28 lg:-mt-24 mt-20 sm:mt-0">
+<section className="grid md:grid-cols-2 gap-8  lg:-mt-24 mt-20 sm:mt-0">
   <img
     src="/src/assets/images/secEffective.png"
     alt="Options de la synchronisation"
-    className="w-full rounded-lg shadow-md lg:-mt-40 "
+    className="w-full rounded-lg shadow-md xl:-mt-8 "
   />
 </section>
 
@@ -92,7 +92,7 @@ export const SynchAcceuil = () => {
   <img 
     src="/src/assets/images/resultat.png" 
     alt="Résultats" 
-    className="w-full rounded-lg shadow-md lg:pr-16  p-4 pb-8 pt-12 xl:pt-0 lg:pt-12" 
+    className="w-full rounded-lg shadow-md lg:pr-20  p-4 pb-8 pt-12 xl:pt-0 lg:pt-12 xl:-mt-6" 
   />
 </section>
 

@@ -4,11 +4,11 @@ import { Footer } from '../Sections'
 import VerifidsnPlusFooter from '../Sections/VerifidsnPlus/VerifidsnPlusFooter'
 export const Candidatures = () => {
   return (
-    <main >
+    <main className='lg:min-h-screen lg:flex lg:flex-col lg:justify-between bg-gray-50'>
     <section >
         <VosCandidatures/>
     </section>
-    <section className='bg-gray-50 -mt-16'>
+    <section className='bg-gray-50 -mt-6 '>
         <VerifidsnPlusFooter />
         </section>
    </main>

@@ -32,12 +32,13 @@ const Hero = () => {
       </div>
 
       {/* right side */}
-      <div className="lg:w-1/2 w-full h-[264px] relative overflow-hidden  sm:h-[600px]  lg:h-[720px] -mt-10">
-        <img
-          src="src/assets/images/skyscraper.jpeg"
-          alt="Buildings"
-          className="w-full h-full object-cover transform lg:-skew-x-6 origin-bottom-left transition-all duration-300 ease-in-out "
-        />
+      <div className="lg:w-1/2 w-full h-[264px] relative overflow-hidden  sm:h-[600px]  lg:h-[720px] -mt-10  ">
+      <img
+  src="src/assets/images/skyscraper.jpeg"
+  alt="Buildings"
+  className="w-full h-full object-cover transform lg:-skew-x-6 origin-bottom-left transition-all duration-300 ease-in-out z-[60] relative"
+/>
+
       </div>
     </section>
   );

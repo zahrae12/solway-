@@ -2,7 +2,7 @@ import React from 'react'
 
 const VerifidsnHero = () => {
   return (
-    <section className="w-full h-auto flex flex-col md:flex-row items-center md:items-start md:gap-10 xl:gap-16 pt-24 md:pt-32 xl:pt-36 px-4 md:px-6 xl:px-16 md:py-8">
+    <section className="w-full h-auto flex flex-col md:flex-row items-center md:items-start md:gap-10 xl:gap-16 pt-24 md:pt-32 xl:pt-36 px-4 md:px-12 xl:px-16 md:py-8">
     {/* Left side */}
     <div className="flex flex-col w-full md:w-1/2 text-center">
       <h1 className="text-3xl md:text-4xl font-extrabold text-gray-950 mb-4">

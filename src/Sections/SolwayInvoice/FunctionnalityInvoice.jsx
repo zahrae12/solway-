@@ -23,9 +23,9 @@ const FunctionnalityInvoice = () => {
       </section>
   
       {/* Section 2: Highly Effective Solutions */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:mt-12 pt-10 md:pt-24">
-        <div className="md:order-1 order-none mt-14">
-          <h2 className="text-[30px] md:text-[24px] font-bold xl:-mt-16 lg:-mt-36  text-center md:text-left max-w-lg">Génération Automatique des Factures</h2>
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:mt-12 pt-10 md:pt-24 ">
+        <div className="md:order-1 order-none ">
+          <h2 className="text-[30px] md:text-[24px] font-bold xl:-mt-16 lg:-mt-36 md:-mt-12 text-center md:text-left max-w-lg">Génération Automatique des Factures</h2>
           <p className="text-gray-950 mt-4 font-medium font-inter text-left ">
           Générez automatiquement des factures professionnelles et personnalisées. Configurez des modèles de factures et des paramètres pour automatiser la création et l'envoi des factures.
           </p>

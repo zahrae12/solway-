@@ -10,7 +10,7 @@ import CheckSteps from '../Sections/SolwayHR/CheckSteps'
 const SolwayHR = () => {
   return (
     <main className='bg-gray-50'>
-       <section className=" px-4 xl:py-12 md:bg-gray-50 bg-white" >
+       <section className=" px-4 xl:py-12 md:bg-gray-50 bg-white md:pt-4" >
       <img
           src="assets/icons/frame.svg"
           alt="dots left"

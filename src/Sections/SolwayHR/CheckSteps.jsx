@@ -39,7 +39,7 @@ const CheckSteps = () => {
 
   return (
     <div className="relative max-w-9xl overflow-hidden">
-      <h2 className="text-3xl font-extrabold font-inter leading-[48px] text-center -mt-2">
+      <h2 className="text-3xl font-extrabold font-inter leading-[48px] text-center mt-6">
         Check all steps
       </h2>
 

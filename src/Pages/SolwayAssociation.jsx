@@ -12,16 +12,19 @@ const SolwayAssociation = () => {
       <div>
       <section className="md:px-6 px-4 xl:py-12 md:bg-gray-50 bg-white md:pt-4 pt-8" >
           {/* Dots */}
+          <div className="relative overflow-hidden">
           <img
             src="assets/icons/associ.svg"
             alt="dots left"
             className="hidden lg:block absolute left-0 -top-1/6 mt-28 object-cover -ml-4"
-          />
+          /></div>
+          <div className="relative overflow-hidden">
           <img
             src="assets/images/Frameright.png"
             alt="dots right"
             className="hidden lg:block absolute right-0 -top-1/6 mt-28 object-cover z-0 -mr-3"
-          />
+          /></div>
+
 
           <div className="relative z-10">
             <SolidaritySection />
@@ -29,16 +32,18 @@ const SolwayAssociation = () => {
         </section>
 
         <section className="xl:px-4 bg-gray-50 relative overflow-hidden md:pt-24 xl:pt-0 pt-6">
+        <div className="relative overflow-hidden">
         <img
             src="assets/icons/greenLeft.svg"
             alt="dots left"
             className="hidden lg:block absolute left-0 -top-1/6 xl:mt-36 lg:mt-12  -ml-4 object-cover"
-          />
+          /></div>
+          <div className="relative overflow-hidden">
           <img
             src="assets/images/Frameright.png"
             alt="dots right"
             className="hidden lg:block absolute right-0 -top-1/6 xl:mt-36 lg:mt-12 object-cover -mr-3"
-          />
+          /></div>
 
           <div className="relative z-10">
             <EngagementSection />

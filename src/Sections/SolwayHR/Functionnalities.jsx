@@ -4,7 +4,7 @@ const Functionnalities = () => {
   return (
      <section className=" xl:-mt-24 mt-2 md:px-4 md:pt-14 lg:px-12 lg:pt-4 px-4">
        {/* Title Section */}
-       <h1 className="text-[36px]  font-extrabold font-inter text-center text-gray-850 lg:m-10 lg:mt-14 m-4 -mt-6 md:pb-4">
+       <h1 className="text-[36px]  font-extrabold font-inter text-center text-gray-850 lg:m-10 lg:mt-14 m-4  md:pb-4 mt-6">
        Fonctionnalités de SOLWAY HR
        </h1>
      
@@ -42,13 +42,13 @@ const Functionnalities = () => {
       </ul>
             
            </div>
-           <img src="assets/images/absence.png" alt="Options de Synchronisation" className="w-full rounded-lg  lg:-mt-4 xl:mt-0" />
+           <img src="assets/images/absence.png" alt="Options de Synchronisation" className="w-full rounded-lg  lg:-mt-4 xl:-mt-12" />
          </section>
      
          
      
          {/* Section 3: Gestion du tps */}
-         <section className="grid md:grid-cols-2 xl:pt-8 lg:pt-12 pt-14 items-center lg:gap-4 xl:gap-0">
+         <section className="grid md:grid-cols-2 xl:pt-8 lg:pt-12 pt-14 items-center lg:gap-4 xl:gap-0 md:gap-4">
            <div>
              <h2 className=" text-[32px] font-bold text-center md:text-left  mt-6 mb-8">Gestion du temps</h2>
              <p className="text-gray-950 font-medium mt-2 max-w-xl  text-left pb-6 text-[18px]">
@@ -79,7 +79,7 @@ const Functionnalities = () => {
       </ul>
             
            </div>
-           <img src="assets/images/paie.png" alt="Options de Synchronisation" className="w-full rounded-lg  lg:mt-4 xl:mt-0 mt-4" />
+           <img src="assets/images/paie.png" alt="Options de Synchronisation" className="w-full rounded-lg  lg:mt-4 xl:-mt-6 mt-4" />
          </section>
          
        </main>

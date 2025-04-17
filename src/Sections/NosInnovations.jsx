@@ -2,9 +2,28 @@ import React, { useState } from "react";
 import { innovations } from "../constants";
 import InnovationCard from "../Components/InnovationCard";
 import { FaArrowRight } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const NosInnovations = () => {
+  const navigate = useNavigate();
+
   const [activeTab, setActiveTab] = useState("VERIF'DSN");
+
+  const handleDiscoverClick = () => {
+    switch (activeTab) {
+      case "VERIF'DSN":
+        navigate("/verifi-dsn");
+        break;
+      case "VERIFI'DSN PLUS":
+        navigate("/verifi-dsn-plus");
+        break;
+      case "SOLWAY Synchronisation HR":
+        navigate("/solway-synchronisation-hr");
+        break;
+      default:
+        break;
+    }
+  };
 
   const renderContent = () => {
     switch (activeTab) {
@@ -20,7 +39,8 @@ const NosInnovations = () => {
                 par les gestionnaires de paie. N’hésitez pas à nous contacter
                 pour avoir plus d’informations ou pour demander un essai gratuit.
               </p>
-              <div className="mt-8 flex items-center lg:text-yellow-500 text-black cursor-pointer">
+              <div className="mt-8 flex items-center lg:text-yellow-500 text-black cursor-pointer"
+              onClick={handleDiscoverClick}>
                 <span className="font-extrabold text-sm md:text-base">
                   Decouvrir
                 </span>
@@ -40,15 +60,24 @@ const NosInnovations = () => {
       case "VERIFI'DSN PLUS":
         return (
           <>
-            <div className="w-auto md:w-1/2 flex flex-col">
-              {innovations.map((innovation) => (
-                <InnovationCard key={innovation.label} {...innovation} />
-              ))}
+            <div className="w-auto md:w-1/2 flex flex-col  ">
+              <h2 className="text-xl font-bold mb-2">VERIF'DSN PLUS</h2>
+              <p>
+              VERIF’DSN PLUS est un outil complémentaire de VERIF’DSN qui permet de contrôler votre DSN sur plusieurs périodes de paie. Cela vous permettra de réaliser facilement et rapidement des contrôles trimestrielle, semestrielle ou annuelle de vos cotisations. 
+              Pour plus d’informations, veuillez nous contacter, nous serons ravis à répondre à vos interrogations.
+              </p>
+              <div className="mt-8 flex items-center lg:text-yellow-500 text-black cursor-pointer"
+              onClick={handleDiscoverClick}>
+                <span className="font-extrabold text-sm md:text-base">
+                  Decouvrir
+                </span>
+                <FaArrowRight size={18} className="ml-2 mt-2" />
+              </div>
             </div>
             <div className="w-full md:w-1/2 flex justify-end">
               <img
                 className="w-80 md:w-96 lg:w-[450px] h-56 md:h-64 lg:h-[300px] object-cover rounded-2xl"
-                src="src/assets/images/image 5.png"
+                src="assets/images/image 5.png"
                 alt="VERIF'DSN"
               />
             </div>
@@ -66,7 +95,8 @@ const NosInnovations = () => {
               SOLWAY Synchronisation HR est notre solution pour automatiser la
               synchronisation des données RH en toute sécurité.
             </p>
-            <div className="mt-4 flex items-center lg:text-yellow-500 text-black cursor-pointer">
+            <div className="mt-4 flex items-center lg:text-yellow-500 text-black cursor-pointer"
+             onClick={handleDiscoverClick}>
                 <span className="font-extrabold text-sm md:text-base">
                   Decouvrir
                 </span>
@@ -82,14 +112,15 @@ const NosInnovations = () => {
   };
 
   const buttonClass = (label) =>
-    `py-2 px-6 md:px-10 rounded-lg font-semibold w-full md:w-auto flex-grow text-center border ${
+    `py-3 px-18 md:py-2  rounded-lg font-semibold w-full  text-center border ${
       activeTab === label
         ? "bg-yellow-500 text-white"
         : "bg-white border-gray-300 text-black"
     }`;
+  
 
   return (
-    <section className="py-6 -mt-24 px-4 md:px-10 lg:px-6">
+    <section className="py-6  px-4 md:px-4 lg:px-8">
       {/* Title Section */}
       <div className="text-center">
         <h1 className="text-3xl font-extrabold">Nos Innovations</h1>
@@ -101,7 +132,7 @@ const NosInnovations = () => {
       </div>
 
       {/* Buttons Section */}
-      <div className="mt-10 flex flex-col md:flex-row gap-4 md:gap-6 justify-center items-center">
+      <div className="mt-10 flex flex-col md:flex-row gap-4 justify-center items-center">
         {["VERIF'DSN", "VERIFI'DSN PLUS", "SOLWAY Synchronisation HR"].map(
           (label) => (
             <button

@@ -2,15 +2,16 @@ import React from "react";
 
 const IntroductionAbout = () => {
   return (
-    <section className="w-full bg-gray-100 py-12 ">
-      <div className="w-full lg:p-12 p-6 mx-auto">
+    <section className="w-full bg-gray-100 py-12  ">
+      <div className="w-full lg:p-12 p-6 mx-auto ">
         <h2 className="text-center font-bold text-yellow-500  uppercase xl:-mt-10 -mt-14">Introducing</h2>
         <h1 className="text-center lg:text-[36px] text-[30px]  lg:font-extrabold text-gray-800 mt-3 font-inter font-semibold align-middle leading-[32px]">
           SOLWAY Consulting & Services
         </h1>
 
         {/* About Section */}
-        <div className="bg-white shadow-lg p-4 lg:p-6 rounded-3xl mt-6 w-full">
+        <div className="bg-white shadow-lg rounded-3xl mt-10 w-full  p-4"> 
+
   <h2 className="text-[30px] font-extrabold text-gray-800 font-inter leading-[40px]">
     About SOLWAY Consulting & Services
   </h2>
@@ -27,7 +28,7 @@ const IntroductionAbout = () => {
   </p>
 
   {/* Quote Section */}
-  <div className="bg-gray-50 p-4 rounded-lg">
+  <div className="bg-gray-50  rounded-lg">
     <blockquote className="mt-8 italic border-l-4 lg:h-[55px] h-[115px] border-yellow-500 pl-4 font-inter font-bold">
       “Life shrinks and expands on the proportion of your willingness to take risks and try new things.”  
       <br />

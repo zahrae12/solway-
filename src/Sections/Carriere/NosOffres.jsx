@@ -9,10 +9,10 @@ const NosOffres = () => {
 
       <div className="mt-8 bg-white max-w-7xl mx-auto rounded-2xl shadow-xl p-8 grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Job Title + Button */}
-        <div className="order-1 md:col-span-3 flex flex-col lg:flex-row items-center justify-between gap-6 w-full">
+        <div className="order-1 md:col-span-3 flex flex-col md:flex-row items-center justify-between gap-6 w-full">
           <h2 className="text-2xl font-semibold">ERP SAP Ressource humaine (H/F)</h2>
-          <div className="w-full lg:w-auto flex lg:justify-end justify-center">
-            <button className="bg-yellow-500 text-white w-[298px]  lg:w-[115px] py-2 rounded hover:bg-yellow-600 mt-4 lg:mt-0">
+          <div className="w-full lg:w-auto flex md:justify-end justify-center">
+            <button className="bg-yellow-500 text-white w-[298px]  md:w-[115px] py-2 rounded hover:bg-yellow-600 mt-4 md:mt-0">
               Postuler
             </button>
           </div>

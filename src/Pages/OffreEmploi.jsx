@@ -7,7 +7,7 @@ const OffreEmploi = () => {
   <div>
     <NosOffres />
   </div>
-  <div className="lg:px-16 -mt-12">
+  <div className="xl:px-20 -mt-12">
     <VerifidsnPlusFooter />
   </div>
 </main>

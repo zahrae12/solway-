@@ -3,30 +3,25 @@ import React from "react";
 
 const SolidaritySection = () => {
   return (
-   < section className=" pt-12 xl:px-12 lg:px-4 ">
-   
-
-    <div className="lg:bg-white relative w-full  md:p-8 lg:rounded-lg flex flex-col md:flex-row items-center lg:shadow-lg overflow-hidden">
-    
-     
-      <div className="md:w-2/3  ">
-      <h2 className="lg:text-[40px] text-[32px] font-extrabold font-inter uppercase text-gray-900 text-center lg:text-left max-w-xl leading-tight">
+    <section className="  md:pt-20 flex justify-center items-center lg:px-9  pt-12">
+      <div className="relative bg-white md:shadow-lg rounded-lg flex flex-col md:flex-row justify-between items-center p-6 md:p-8 gap-6 md:gap-8 h-auto w-full ">
+      
+      <div className="flex-1 max-w-xl text-center">
+      <h1 className="lg:text-[46px] md:text-[30px] text-[36px]  font-extrabold font-inter uppercase text-gray-900">
   ASSOCIATION SOLWAY POUR LA SOLIDARITÉ
-</h2>
+</h1>
 
-        <p className="text-gray-700 font-inter mt-2 text-center lg:text-left  ">
+<p className="text-gray-950 font-inter mt-2">
         Conscients de leur responsabilité envers les actions caritatives, les salariés de SOLWAY ont créé l'Association SOLWAY Pour la Solidarité.
-        <br className="hidden lg:block" />  <br className="hidden lg:block" />
+        <br className="hidden lg:block" />  <br className="hidden md:block" />
         Nous priorisons l'accès à une éducation de qualité pour les enfants défavorisés et soutenons financièrement les plus démunis pour assurer leur dignité. Ensemble, nous incarnons la solidarité et l'engagement pour un Maroc plus solidaire.
         </p>
       </div>
-      <div className="md:w-1/3 flex  justify-end ">
-        <img
-          src="assets/images/solidarity.png"
-          alt="Association Solway Logo"
-          className="w-65 md:w-65 lg:w-58 border border-green-400 rounded-lg mt-6 lg:mt-0"
-        />
-      </div>
+      <div className="flex-none">
+          <div className=" rounded-lg w-full flex justify-center">
+            <img src="assets/images/solidarity.png" alt="Soldesk Logo" className="w-auto h-auto md:w-[280px] md:h-[242px]" />
+          </div>
+        </div>
     </div>
     </section>
   );

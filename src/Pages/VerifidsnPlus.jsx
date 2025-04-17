@@ -6,8 +6,8 @@ import AllSteps from '../Sections/Verifi\'dsn/AllSteps'
 import VerifidsnPlusFooter from '../Sections/VerifidsnPlus/VerifidsnPlusFooter'
 const VerifidsnPlus = () => {
   return (
-    <main>
-    <section className=''>
+    <main className='md:bg-gray-50 bg-white'>
+    <section className='bg-white md:px-8'>
       <VerifidsnPlusHero />
       </section>
       <section className=" padding small-screen-bg md:bg-gray-50 bg-gray-50">
@@ -27,7 +27,7 @@ const VerifidsnPlus = () => {
                 <ControlDsn />
                 </div>
               </section>
-              <section className=" pt-8 lg:px-14 px-4 small-screen-bg bg-white">
+              <section className=" pt-8 lg:px-14 px-4 small-screen-bg ">
               <img
           src="assets/icons/frame.svg"
           alt="dots left"
@@ -40,11 +40,11 @@ const VerifidsnPlus = () => {
           alt="dots right"
          className="hidden lg:block absolute right-0 -top-1/6 mt-52  object-cover z-0"
   />
-             <div className="relative z-10">
+             <div className="relative z-10 md:bg-gray-50 bg-white md:-mt-4 md:px-10 lg:px-2 ">
                 <AllSteps />
                 </div>
               </section>
-              <section className=" lg:pt-8 pt-16 bg-white ">
+              <section className="  bg-white md:bg-gray-50 ">
                 <VerifidsnPlusFooter />
               </section>
 

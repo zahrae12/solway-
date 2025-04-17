@@ -7,7 +7,7 @@ import VerifidsnPlusFooter from '../Sections/VerifidsnPlus/VerifidsnPlusFooter'
 const Soldesk = () => {
   return (
     <main className="bg-gray-50">
-    <section className=" px-4 xl:py-12 bg-white lg:bg-gray-50" >
+    <section className=" md:px-4 lg:px-0  xl:py-12 bg-white md:bg-gray-50" >
     <img
           src="assets/icons/frame.svg"
           alt="dots left"
@@ -22,7 +22,7 @@ const Soldesk = () => {
   />
     <SoldeskHero/>
     </section>
-    <section className=" padding bg-gray-50 " >
+    <section className=" md:px-4 xl:px-12 lg:px-8 bg-gray-50 xl:pt-16  md:pt-8" >
     <img
           src="assets/icons/frame.svg"
           alt="dots left"
@@ -53,7 +53,7 @@ const Soldesk = () => {
        <SoldeskAcceuil/>
        </div>
         </section>
-        <section className=" bg-gray-50 xl:px-12 xl:-mt-12 lg:-pt-8 -pt-18 -mt-6 lg:mt-0">
+        <section className=" bg-gray-50 xl:px-12  lg:-pt-8 pt-4 -mt-6 lg:mt-0">
                 <VerifidsnPlusFooter />
               </section>
     </main>

@@ -8,7 +8,7 @@ const NosMissions = () => {
     <section>
         <NosMissionsPage/>
     </section>
-    <section className='bg-gray-50 -mt-28'>
+    <section className='bg-gray-50 -mt-28 md:px-4'>
         <VerifidsnPlusFooter />
         </section>
    </main>

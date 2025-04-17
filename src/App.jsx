@@ -31,7 +31,7 @@ function App() {
               <img
           src="assets/icons/frame.svg"
           alt="dots left"
-         className="hidden xl:block absolute left-0 -top-1/6 mt-24  object-cover  "
+         className="hidden xl:block absolute -left-8 -top-1/6 mt-24  object-cover  "
   />
   
            {/* Right Dots */}
@@ -40,29 +40,29 @@ function App() {
           alt="dots right"
          className="hidden xl:block absolute right-0 -top-1/6 mt-24 object-cover z-0 "
   />
-             <div className="relative z-10 ">
+             <div className="relative z-10  ">
                 <NosActivites />
                 </div>
           </section>
           {/* section dial Nos inovations */}
-              <section className="padding">
+              <section className="-mt-4">
               <img
           src="assets/icons/frame.svg"
           alt="dots left"
-         className="hidden xl:block absolute left-0 -top-1/6 mt-60  object-cover -ml-1 "
+         className="hidden xl:block absolute left-0 -top-1/6 mt-72  object-cover -ml-4 "
   />
   
            {/* Right Dots */}
          <img
           src="assets/icons/frameleft.svg"
           alt="dots right"
-         className="hidden xl:block absolute right-0 -top-1/6 mt-60 object-cover z-0"
+         className="hidden xl:block absolute right-0 -top-1/6 mt-72 object-cover z-0"
   />
-             <div className="relative z-10 ">
+             <div className="relative z-10 md:mt-6">
                 <NosInnovations />
                 </div>
               </section>
-              <section className="padding">
+              <section className="pt-24">
               <img
           src="assets/icons/frame.svg"
           alt="dots left"
@@ -79,23 +79,23 @@ function App() {
                 <NosSolutions />
                 </div>
               </section>
-              <section className="bg-gray-50 padding  ">
+              <section className="bg-gray-50 -mt-6   ">
                 <Partenaires />
               </section>
-              <section className="padding">
+              <section className="">
               <img
           src="assets/icons/frame.svg"
           alt="dots left"
-         className="hidden xl:block absolute left-0 -top-1/6 -mt-16  object-cover -ml-2 "
+         className="hidden xl:block absolute left-0 -top-1/6 -mt-18  object-cover -ml-2 "
   />
   
            {/* Right Dots */}
          <img
           src="assets/icons/frameleft.svg"
           alt="dots right"
-         className="hidden xl:block absolute right-0 -top-1/6 -mt-16 object-cover z-0"
+         className="hidden xl:block absolute right-0 -top-1/6 -mt-18 object-cover z-0"
   />
-             <div className="relative z-10 ">
+             <div className="relative z-10 mt-10 ">
                 <Footer />
                 </div>
               </section>

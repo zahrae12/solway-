@@ -22,7 +22,7 @@ const ContactHero = () => {
         <div className="-mt-6 xl:mt-0  ">
         <div className="bg-white shadow-lg rounded-lg border border-gray-300 p-4 lg:p-10 lg:pl-10 ">
                 <form className="space-y-4 lg:w-[523px] lg:h-[640px] w-[100%] ">
-                    <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                    <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
                         <div>
                             <label className="block text-gray-700 font-medium mb-2">Nom (requis)</label>
                             <input type="text" className="border border-gray-400 p-2 w-full rounded" required />

@@ -6,8 +6,8 @@ import VerifyFooter from '../Sections/Verifi\'dsn/VerifyFooter'
 
 const Verifidsn = () => {
   return (
-    <main className="">
-       <section >
+    <main className=" md:bg-gray-50 bg-white">
+       <section  className='bg-white'>
       <VerifidsnHero />
       </section>
       <section className=" padding small-screen-bg md:bg-gray-50 bg-gray-50">
@@ -27,7 +27,7 @@ const Verifidsn = () => {
                 <ControlDsn />
                 </div>
               </section>
-              <section className=" pt-8 lg:px-14 px-4 small-screen-bg  bg-white">
+              <section className=" pt-8 lg:px-14 px-4 small-screen-bg ">
               <img
           src="assets/icons/frame.svg"
           alt="dots left"
@@ -40,11 +40,11 @@ const Verifidsn = () => {
           alt="dots right"
          className="hidden lg:block absolute right-0 -top-1/6 mt-52  object-cover z-0"
   />
-             <div className="relative z-10">
+             <div className="relative z-10 md:bg-gray-50 bg-white md:-mt-4 md:px-10 lg:px-2 ">
                 <AllSteps />
                 </div>
               </section>
-              <section className=" bg-cover bg-no-repeat lg:pt-6 pt-16  md:bg-white">
+              <section className=" bg-cover bg-no-repeat lg:pt-6 pt-16 xl:pt-16  ">
                 <VerifyFooter />
               </section>
       </main>

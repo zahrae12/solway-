@@ -3,7 +3,7 @@ import LogosCard from "../assets/images/LogosCard.png";
 
 const Partenaires = () => {
   return (
-    <section className="-mt-16">
+    <section className="-mt-16 xl:px-6 py-4 md:mt-4 mt-2 ">
       <div className="w-auto flex flex-col xl:flex-row items-center gap-6 xl:gap-20 xl:-mr-8 xl:-ml-8 ">
         
         {/* Title */}
@@ -13,7 +13,7 @@ const Partenaires = () => {
         </h2>
 
         {/* Logos Container */}
-        <div className="rounded-lg xl:p-6 flex justify-center xl:justify-end pt-2 xl:ml-auto ">
+        <div className="rounded-lg xl:p-6 flex justify-center xl:justify-end pt-2 xl:ml-auto xl:mr-4 p-4">
           <img
             src={LogosCard}
             alt="Partenaires"

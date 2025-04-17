@@ -8,7 +8,7 @@ export const Candidatures = () => {
     <section >
         <VosCandidatures/>
     </section>
-    <section className='bg-gray-50 -mt-6 '>
+    <section className='bg-gray-50 -mt-6 md:px-6 '>
         <VerifidsnPlusFooter />
         </section>
    </main>

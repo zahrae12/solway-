@@ -4,8 +4,8 @@ import { RiTwitterXFill } from "react-icons/ri";
 const Footer = () => {
   return (
     <div>
-    <section className=" flex justify-center items-center -mt-16 lg:px-5 ">
-    <div className="bg-yellow-500 lg:w-full lg:h-auto text-center px-4 py-16 rounded-lg shadow-lg ">
+    <section className=" flex justify-center items-center  lg:px-8 px-4">
+    <div className="bg-yellow-500 lg:w-full lg:h-auto text-center px-4 py-12 rounded-lg shadow-lg ">
     <h1 className='text-white text-3xl lg:font-extrabold  font-bold leading-[22px]  '>SOLWAY Recrute</h1>
     <h1 className='text-white  lg:text-3xl lg:font-extrabold font-bold leading-[42px]  '>Vous etes Consultant SAP HR ? </h1>
     
@@ -24,7 +24,7 @@ const Footer = () => {
   </div>
   
   </section>
-  <footer className=" text-gray-700 px-6 py-4 pt-8">
+  <footer className=" text-gray-700 px-8 md:px-10 py-4 pt-8">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 text-sm">
 
       

@@ -17,6 +17,7 @@ export default {
       '4xl': ['48px', '58px'],
       '8xl': ['96px', '106px']
     },
+    
     fontWeight: {
       thin: '100',
       hairline: '100',
@@ -30,6 +31,7 @@ export default {
     
       black: '900',
     },
+
    
     extend: {
       fontFamily: {

@@ -104,6 +104,11 @@ const AllSteps = () => {
           />
         ))}
       </div>
+      <div className="flex justify-center mt-6">
+  <button className="bg-yellow-500 border border-gray-300 text-white font-semibold py-3 md:w-[134px] w-full rounded-sm shadow-md hover:bg-yellow-100 transition">
+    Brochure
+  </button>
+</div>
     </div>
   );
 };

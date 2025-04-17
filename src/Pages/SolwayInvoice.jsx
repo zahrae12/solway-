@@ -5,7 +5,7 @@ import VerifidsnPlusFooter from '../Sections/VerifidsnPlus/VerifidsnPlusFooter'
 const SolwayInvoice = () => {
   return (
     <main className='bg-gray-50'>
-       <section className=" px-4 xl:py-12 lg:bg-gray-50 bg-white " >
+       <section className="md:px-6 px-4 xl:py-12 md:bg-gray-50 bg-white md:pt-4 pt-6" >
        <img
           src="assets/icons/frame.svg"
           alt="dots left"
@@ -20,18 +20,18 @@ const SolwayInvoice = () => {
   />
        <InvoiceHero/>
        </section>
-       <section className=" padding bg-gray-50 " >
+       <section className="  bg-gray-50 " >
        <img
           src="assets/icons/frame.svg"
           alt="dots left"
-         className="hidden lg:block absolute left-0 -top-1/6 mt-28  object-cover -ml-6 "
+         className="hidden lg:block absolute left-0 -top-1/6 mt-56  object-cover -ml-6 "
   />
   
            {/* Right Dots */}
          <img
           src="assets/icons/soldeskframe.svg"
           alt="dots right"
-         className="hidden lg:block absolute right-0 -top-1/6 mt-28  object-cover z-0"
+         className="hidden lg:block absolute right-0 -top-1/6 mt-56  object-cover z-0"
   />
 
 
@@ -51,7 +51,7 @@ const SolwayInvoice = () => {
           <FunctionnalityInvoice/>
           </div>
            </section>
-           <section className=" bg-cover bg-no-repeat xl:px-10 -mt-14 bg-gray-100">
+           <section className=" bg-cover bg-no-repeat xl:px-10 lg:px-8 -mt-2 md:pt-12 bg-gray-50">
                 <VerifidsnPlusFooter />
               </section>   
        </main>

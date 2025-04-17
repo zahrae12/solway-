@@ -4,8 +4,8 @@ const NosMissionsPage = () => {
   return (
     <section className="flex flex-col xl:flex-row  md:items-center xl:items-start gap-20 lg:px-10   py-32 bg-gray-50">
     {/* Left Side */}
-    <div className="flex flex-col md:w-1/2  text-wrap  px-12 lg:px-0">
-      <h2 className="text-[30px] font-bold text-center xl:text-left lg:max-w-lg max-w-xs leading-tight   ">
+    <div className="flex flex-col md:w-1/2  text-wrap  px-12 md:px-0">
+      <h2 className="text-[30px] font-bold text-center xl:text-left md:max-w-lg max-w-xs leading-tight   ">
       SOLWAY <br/> Nos Missions <br/>Déposez votre candidature
       </h2>
       <p className="text-[16px] mt-4 text-gray-700  font-inter text-center xl:text-left">
@@ -14,10 +14,10 @@ const NosMissionsPage = () => {
     </div>
   
     {/* Right Side */}
-    <div className="-mt-6 xl:mt-0 px-6 lg:px-0">
+    <div className="-mt-6 xl:mt-0 px-6 md:px-0">
     <div className="bg-white shadow-lg rounded-lg border border-gray-300 p-4 lg:p-10 lg:pl-10 ">
-            <form className="space-y-4 lg:w-[523px] lg:h-auto w-[100%] ">
-                <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+            <form className="space-y-4 md:w-[523px] md:h-auto w-[100%] ">
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
                     <div>
                         <label className="block text-gray-700 font-medium mb-2">Nom (requis)</label>
                         <input type="text" className="border border-gray-400 p-2 w-full rounded" required />

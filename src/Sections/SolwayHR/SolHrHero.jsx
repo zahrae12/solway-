@@ -2,9 +2,9 @@ import React from 'react'
 
 const SolHrHero = () => {
   return (
-    <section className="  lg:pt-20 flex justify-center items-center lg:px-9  pt-12">
-    <div className="relative bg-white lg:shadow-lg rounded-lg flex flex-col lg:flex-row justify-between items-center max-w-8xl w-full p-12 lg:p-10 gap-6 lg:gap-8 h-auto">
-      
+    <section className="  md:pt-20 flex justify-center items-center lg:px-9  pt-12">
+      <div className="relative bg-white md:shadow-lg rounded-lg flex flex-col md:flex-row justify-between items-center p-6 md:p-8 gap-6 md:gap-8 h-auto w-full ">
+        
       {/* Left Side - Text Content */}
       <div className="flex-1 max-w-xl text-center">
         <h1 className="text-[46px] font-extrabold font-inter uppercase text-gray-900">SOLWAY HR</h1>

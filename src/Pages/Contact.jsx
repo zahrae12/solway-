@@ -6,7 +6,7 @@ const Contact = () => {
     <main className="w-full ">
 
       <ContactHero />
-     <section className="bg-cover bg-no-repeat lg:px-12  lg:pt-10 px-6 pt-4 small-screen-bg md:bg-gray-50 bg-gray-50">
+     <section className=" lg:px-2    px-2  -mt-14 lg:-mt-6 md:bg-gray-50 bg-gray-50">
                      <Footer />
                    </section>
       </main>

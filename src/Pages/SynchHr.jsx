@@ -56,7 +56,7 @@ export const SynchHr = () => {
    <SynchAcceuil/>
    </div>
     </section>
-    <section className=" bg-cover bg-no-repeat  pt-0 -mt-14 bg-gray-100">
+    <section className=" bg-cover bg-no-repeat  pt-0 -mt-14 bg-gray-100 md:px-4">
                 <VerifidsnPlusFooter />
               </section>
     </main>

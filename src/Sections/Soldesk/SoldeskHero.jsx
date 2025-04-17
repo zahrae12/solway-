@@ -2,8 +2,8 @@ import React from 'react';
 
 const SoldeskHero = () => {
   return (
-    <section className="xl:py-6 xl:pt-24 lg:pt-24 flex justify-center items-center lg:px-10 pt-24">
-      <div className="relative bg-white lg:shadow-lg rounded-lg flex flex-col lg:flex-row justify-between items-center p-6 lg:p-8 gap-6 lg:gap-8 h-auto w-full ">
+    <section className="  md:pt-20 flex justify-center items-center lg:px-9  pt-12">
+      <div className="relative bg-white md:shadow-lg rounded-lg flex flex-col md:flex-row justify-between items-center p-6 md:p-8 gap-6 md:gap-8 h-auto w-full ">
         
         {/* Left Side - Text Content */}
         <div className="flex-1 max-w-xl text-center">

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Functionnalities = () => {
   return (
-     <section className=" xl:-mt-24 mt-2 md:px-4 md:pt-14 lg:px-12 lg:pt-4 px-4">
+     <section className=" xl:-mt-24 mt-2 md:px-6 md:pt-14 lg:px-12 lg:pt-4 px-4">
        {/* Title Section */}
        <h1 className="text-[36px]  font-extrabold font-inter text-center text-gray-850 lg:m-10 lg:mt-14 m-4  md:pb-4 mt-6">
        Fonctionnalités de SOLWAY HR

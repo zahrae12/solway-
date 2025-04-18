@@ -14,6 +14,7 @@ import OffreEmploi from "./Pages/OffreEmploi";
 import { Candidatures } from "./Pages/Candidatures";
 import NosMissions from "./Pages/NosMissions"
 import VosMissions from"./Pages/VosMissions"
+import CookieBanner from "./Components/CookiesBanner";
 function App() {
   return (
     <Router>
@@ -23,83 +24,96 @@ function App() {
         <Route
           path="/"
           element={
+            <div className="overflow-x-hidden w-full">
             <main className="p-0 bg-gray-50">
-              <section className="bg-white">
+          
+              {/* Hero Section */}
+              <section className="bg-white relative overflow-hidden">
                 <Hero />
               </section>
-              <section className="">
-              <img
-          src="assets/icons/frame.svg"
-          alt="dots left"
-         className="hidden xl:block absolute -left-8 -top-1/6 mt-24  object-cover  "
-  />
-  
-           {/* Right Dots */}
-         <img
-          src="assets/icons/frameleft.svg"
-          alt="dots right"
-         className="hidden xl:block absolute right-0 -top-1/6 mt-24 object-cover z-0 "
-  />
-             <div className="relative z-10  ">
-                <NosActivites />
-                </div>
-          </section>
-          {/* section dial Nos inovations */}
-              <section className="-mt-4">
-              <img
-          src="assets/icons/frame.svg"
-          alt="dots left"
-         className="hidden xl:block absolute left-0 -top-1/6 mt-72  object-cover -ml-4 "
-  />
-  
-           {/* Right Dots */}
-         <img
-          src="assets/icons/frameleft.svg"
-          alt="dots right"
-         className="hidden xl:block absolute right-0 -top-1/6 mt-72 object-cover z-0"
-  />
-             <div className="relative z-10 md:mt-6">
-                <NosInnovations />
+          
+              {/* Nos Activites Section */}
+              <section className="relative overflow-hidden">
+                {/* Decorative Dots */}
+                <img
+                  src="assets/icons/frame.svg"
+                  alt="dots left"
+                  className="hidden xl:block absolute -left-8 top-22 object-cover"
+                />
+                <img
+                  src="assets/icons/frameleft.svg"
+                  alt="dots right"
+                  className="hidden xl:block absolute right-0 top-22 object-cover z-0"
+                />
+                <div className="relative z-10">
+                  <NosActivites />
                 </div>
               </section>
-              <section className="pt-24">
-              <img
-          src="assets/icons/frame.svg"
-          alt="dots left"
-         className="hidden xl:block absolute left-0 -top-1/6 mt-36  object-cover  "
-  />
-  
-           {/* Right Dots */}
-         <img
-          src="assets/icons/frameleft.svg"
-          alt="dots right"
-         className="hidden xl:block absolute right-0 -top-1/6 mt-36 object-cover z-0"
-  />
-             <div className="relative z-10 ">
-                <NosSolutions />
+          
+              {/* Nos Innovations Section */}
+              <section className="relative overflow-hidden mt-6">
+                {/* Decorative Dots */}
+                <img
+                  src="assets/icons/frame.svg"
+                  alt="dots left"
+                  className="hidden xl:block absolute left-0 top-72 object-cover -ml-4"
+                />
+                <img
+                  src="assets/icons/frameleft.svg"
+                  alt="dots right"
+                  className="hidden xl:block absolute right-0 top-72 object-cover z-0"
+                />
+                <div className="relative z-10 md:mt-6">
+                  <NosInnovations />
                 </div>
               </section>
-              <section className="bg-gray-50 -mt-6   ">
+          
+              {/* Nos Solutions Section */}
+              <section className="relative overflow-hidden pt-24">
+                {/* Decorative Dots */}
+                <img
+                  src="assets/icons/frame.svg"
+                  alt="dots left"
+                  className="hidden xl:block absolute left-0 top-60 object-cover"
+                />
+                <img
+                  src="assets/icons/frameleft.svg"
+                  alt="dots right"
+                  className="hidden xl:block absolute right-0 top-60 object-cover z-0"
+                />
+                <div className="relative z-10">
+                  <NosSolutions />
+                </div>
+              </section>
+          
+              {/* Partenaires Section */}
+              <section className="bg-gray-50 mt-0">
                 <Partenaires />
               </section>
-              <section className="">
-              <img
-          src="assets/icons/frame.svg"
-          alt="dots left"
-         className="hidden xl:block absolute left-0 -top-1/6 -mt-18  object-cover -ml-2 "
-  />
-  
-           {/* Right Dots */}
-         <img
-          src="assets/icons/frameleft.svg"
-          alt="dots right"
-         className="hidden xl:block absolute right-0 -top-1/6 -mt-18 object-cover z-0"
-  />
-             <div className="relative z-10 mt-10 ">
-                <Footer />
+          
+              {/* Footer Section */}
+              <section className="relative overflow-hidden">
+                {/* Decorative Dots */}
+                <img
+                  src="assets/icons/frame.svg"
+                  alt="dots left"
+                  className="hidden xl:block absolute left-0 top-12 object-cover -ml-4"
+                />
+                <img
+                  src="assets/icons/frameleft.svg"
+                  alt="dots right"
+                  className="hidden xl:block absolute right-0 top-12 object-cover z-0"
+                />
+                <div className="relative z-10 mt-10">
+                  <Footer />
                 </div>
               </section>
+          
+              
+              
             </main>
+          </div>
+          
           }
         />
         
@@ -118,6 +132,8 @@ function App() {
         <Route path="/nos-missions" element={<NosMissions/>} />
         <Route path="/vos-missions" element={<VosMissions/>} />
       </Routes>
+      {/* Cookie Banner */}
+      <CookieBanner />
     </Router>
   );
 }

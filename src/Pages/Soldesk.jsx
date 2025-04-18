@@ -6,65 +6,66 @@ import VerifidsnPlusFooter from '../Sections/VerifidsnPlus/VerifidsnPlusFooter'
 
 const Soldesk = () => {
   return (
-    <main className="bg-gray-50">
-    <section className=" md:px-4 lg:px-0  xl:py-12 bg-white md:bg-gray-50 md:pt-4" >
-    <div className="relative overflow-hidden">
-    <img
-          src="assets/icons/frame.svg"
-          alt="dots left"
-         className="hidden lg:block absolute left-0 -top-1/6 mt-28  object-cover -ml-6 "
-  />
-  </div>
-  <div className="relative overflow-hidden">
-           {/* Right Dots */}
-         <img
-          src="assets/icons/soldeskframe.svg"
-          alt="dots right"
-         className="hidden lg:block absolute right-0 -top-1/6 mt-28  object-cover -mr-4 z-0"
-  />
-  </div>
-    <SoldeskHero/>
-    </section>
-    <section className=" md:px-4 xl:px-12 lg:px-8 bg-gray-50 xl:pt-16  md:pt-8" >
-    <div className="relative overflow-hidden">
-    <img
-          src="assets/icons/frame.svg"
-          alt="dots left"
-         className="hidden lg:block absolute left-0 -top-1/6 mt-36 object-cover -ml-6 z-4 "
-  /></div>
-  
-  <div className="relative overflow-hidden">
-           {/* Right Dots */}
-         <img
-          src="assets/icons/soldeskframe.svg"
-          alt="dots right"
-         className="hidden lg:block absolute right-0 -top-1/6 mt-36  object-cover z-0 -mr-5"
-  />
-  </div>
-<div className="relative overflow-hidden">
-<img 
-  src="assets/icons/frame.svg"
-  alt="dots left"
-  className="hidden xl:block absolute top-[210%] left-0  object-cover -mt-4 -ml-6"
- 
-/>
-</div>
-<div className="relative overflow-hidden">
-           {/* Right Dots */}
-         <img
-          src="assets/icons/soldeskframe.svg"
-          alt="dots right"
-         className="hidden xl:block absolute right-0 top-[210%] -mt-4 object-cover -mr-5"
-  /> 
-</div>
-   <div className="relative z-10">
-       <SoldeskAcceuil/>
-       </div>
+    <div className="overflow-x-hidden w-full">
+      <main className="bg-gray-50">
+
+        {/* Hero Section */}
+        <section className="relative md:px-4 lg:px-0 xl:py-12 bg-white md:bg-gray-50 md:pt-4 pt-8 overflow-hidden">
+          {/* Decorative Dots */}
+          <img
+            src="assets/icons/frame.svg"
+            alt="dots left"
+            className="hidden md:block absolute left-0 top-36 object-cover md:-ml-6 xl:mt-4"
+          />
+          <img
+            src="assets/icons/soldeskframe.svg"
+            alt="dots right"
+            className="hidden md:block absolute right-0 top-36 object-cover -mr-12 md:-mr-6 z-0 xl:mt-4"
+          />
+
+          <div className="relative z-10">
+            <SoldeskHero />
+          </div>
         </section>
-        <section className=" bg-gray-50 xl:px-12  lg:-pt-8 pt-4 -mt-6 lg:mt-0">
-                <VerifidsnPlusFooter />
-              </section>
-    </main>
+
+        {/* Acceuil Section */}
+        <section className="relative md:px-4 xl:px-12 lg:px-8 bg-gray-50 xl:pt-16 md:pt-8 overflow-hidden">
+          {/* First Decorative Dots */}
+          <img
+            src="assets/icons/frame.svg"
+            alt="dots left"
+            className="hidden md:block absolute left-0 top-36 object-cover -ml-6 xl:-ml-6 z-10"
+          />
+          <img
+            src="assets/icons/soldeskframe.svg"
+            alt="dots right"
+            className="hidden md:block absolute right-0 top-36 object-cover -mr-6 z-0"
+          />
+
+          {/* Second Decorative Dots */}
+          <img
+            src="assets/icons/frame.svg"
+            alt="dots left"
+            className="hidden md:block absolute left-0 top-[790px] object-cover -ml-6 xl:-ml-6 z-10"
+          />
+          <img
+            src="assets/icons/soldeskframe.svg"
+            alt="dots right"
+            className="hidden md:block absolute right-0 top-[790px] object-cover -mr-6 z-0"
+          />
+
+          <div className="relative z-20">
+            <SoldeskAcceuil />
+          </div>
+        </section>
+
+        {/* Footer */}
+        <section className="relative bg-gray-50 xl:px-12 lg:-pt-8 pt-4 -mt-6 lg:mt-0 overflow-hidden">
+          <VerifidsnPlusFooter />
+        </section>
+
+      </main>
+    </div>
   )
 }
 

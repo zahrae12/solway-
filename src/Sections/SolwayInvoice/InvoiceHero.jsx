@@ -2,7 +2,7 @@ import React from 'react'
 
 const InvoiceHero = () => {
   return (
-    <section className="  md:pt-20 flex justify-center items-center lg:px-9  pt-12">
+    <section className="  md:pt-20 flex justify-center items-center lg:px-9 xl:px-12 md:px-4  pt-12">
       <div className="relative bg-white md:shadow-lg rounded-lg flex flex-col md:flex-row justify-between items-center p-6 md:p-8 gap-6 md:gap-8 h-auto w-full ">
       
       {/* Left Side - Text Content */}

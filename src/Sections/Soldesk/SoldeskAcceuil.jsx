@@ -4,7 +4,7 @@ import React from 'react'
 const SoldeskAcceuil = () => {
   return (
 
-    <section className=" xl:-mt-16 mt-2  ">
+    <section className=" xl:-mt-16 mt-2 md:px-4 lg:px-2 px-4 ">
     {/* Title Section */}
     <h1 className="text-[36px]  font-extrabold font-inter text-center text-gray-850 mb-10">
     Fonctionnalités de SOLDESK
@@ -57,7 +57,7 @@ Cette communication bidirectionnelle et transparente garantit que toutes les par
            Cette simplicité d’utilisation permet de gagner du temps et d’assurer que toutes les informations nécessaires sont immédiatement disponibles, ce qui facilite une gestion rapide et précise des demandes.
           </p>
         </div>
-        <img src="assets/images/func3.png" alt="Résultats" className="w-full rounded-lg  lg:pr-20 -pt-4 -mt-8 pb-22 lg:pb-0 md:-mt-60 lg:-mt-14" />
+        <img src="assets/images/func3.png" alt="Résultats" className="w-full rounded-lg  lg:pr-20 -pt-4 -mt-8 pb-12 lg:pb-0 md:-mt-60 lg:-mt-14" />
       </section>
     </main>
   </section>

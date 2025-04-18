@@ -3,11 +3,11 @@ import React from "react";
 
 const SolidaritySection = () => {
   return (
-    <section className="  md:pt-20 flex justify-center items-center lg:px-9  pt-12">
+    <section className="  md:pt-20 flex justify-center items-center lg:px-7 xl:px-12 md:px-4  pt-12">
       <div className="relative bg-white md:shadow-lg rounded-lg flex flex-col md:flex-row justify-between items-center p-6 md:p-8 gap-6 md:gap-8 h-auto w-full ">
       
-      <div className="flex-1 max-w-xl text-center">
-      <h1 className="lg:text-[46px] md:text-[30px] text-[36px]  font-extrabold font-inter uppercase text-gray-900">
+      <div className="flex-1 max-w-xl md:text-left text-center">
+      <h1 className="lg:text-[46px] md:text-[30px] text-[36px]  font-extrabold font-inter uppercase text-gray-900 leading-tight">
   ASSOCIATION SOLWAY POUR LA SOLIDARITÉ
 </h1>
 

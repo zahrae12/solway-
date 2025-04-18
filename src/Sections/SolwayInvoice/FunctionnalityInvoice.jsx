@@ -2,7 +2,7 @@ import React from 'react'
 
 const FunctionnalityInvoice = () => {
   return (
-    <section className=" xl:-mt-24 mt-2 lg:-mt-12 md:pt-16 md:px-8 lg:px-14 px-4 ">
+    <section className=" xl:-mt-24 mt-2 lg:-mt-12 md:pt-16 md:px-10 lg:px-14 px-4 ">
     {/* Title Section */}
     <h1 className="text-[36px]  font-extrabold font-inter text-center text-gray-850 lg:m-10 lg:mt-14 m-4 ">
     Fonctionnalités de SOLWAY Invoice
@@ -38,14 +38,14 @@ const FunctionnalityInvoice = () => {
       
   
       {/* Section 3: Résultats */}
-      <section className="grid md:grid-cols-2  lg:pt-6 pt-16 items-center pb-8 md:gap-4">
+      <section className="grid md:grid-cols-2  lg:pt-6 pt-16 items-center pb-8 md:gap-6">
         <div>
           <h2 className="text-[30px] md:text-[24px] font-bold xl:-mt-16 md:-mt-4  text-center md:text-left max-w-lg">Suivi Facile du Paiement des Factures</h2>
-          <p className="text-gray-600 font-medium mt-2 max-w-xl  text-left ">
+          <p className="text-gray-950 mt-4 font-medium font-inter text-left md:text-[16px] ">
           Suivez facilement le paiement des factures avec des outils de suivi en temps réel. Recevez des notifications et des rappels automatiques pour les factures en attente et les paiements à venir.
           </p>
         </div>
-        <img src="assets/images/factures.png" alt="Résultats" className="w-full rounded-lg  lg:pr-20  mt-8 md:-mt-6 lg:mt-6" />
+        <img src="assets/images/factures.png" alt="Résultats" className="w-full rounded-lg    mt-8 md:-mt-6 lg:mt-6" />
       </section>
 
      

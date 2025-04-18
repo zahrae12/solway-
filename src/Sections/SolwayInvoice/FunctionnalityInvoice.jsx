@@ -13,8 +13,8 @@ const FunctionnalityInvoice = () => {
       {/* Section 1: Écran d'accueil */}
       <section className="grid md:grid-cols-2 gap-8 items-center text-center md:text-left ">
         <div className=''>
-          <h2 className="text-[30px] md:text-[24px] font-bold xl:-mt-16 lg:-mt-12 -mt-32 text-center md:text-left max-w-lg">Génération Facile du Compte Rendu d'Activité pour Chaque Utilisateur</h2>
-          <p className="text-gray-950 mt-4 font-medium font-inter text-left md:text-[16px] ">
+          <h2 className="text-[30px] lg:text-[24px] md:text-[22px] font-bold xl:-mt-16 lg:-mt-12 -mt-32 text-center md:text-left max-w-lg">Génération Facile du Compte Rendu d'Activité pour Chaque Utilisateur</h2>
+          <p className="text-gray-950 md:text-[14px] lg:text-[16px] mt-4 font-medium font-inter text-left  ">
           Créez facilement des comptes rendus d'activité pour chaque utilisateur, offrant une vue d'ensemble claire et détaillée des transactions et des performances financières.
           </p>
          
@@ -22,11 +22,11 @@ const FunctionnalityInvoice = () => {
         <img src="assets/images/userManagement.png" alt="Écran d'accueil" className="w-full rounded-lg  pt-8 lg:-mt-14 xl:mt-0 md:-mt-64 " />
       </section>
   
-      {/* Section 2: Highly Effective Solutions */}
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:mt-12 pt-10 md:pt-24 ">
+      {/* Section 2 */}
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:mt-14 pt-10 md:pt-24 ">
         <div className="md:order-1 order-none ">
-          <h2 className="text-[30px] md:text-[24px] font-bold xl:-mt-16 lg:-mt-36 md:-mt-12 text-center md:text-left max-w-lg">Génération Automatique des Factures</h2>
-          <p className="text-gray-950 mt-4 font-medium font-inter text-left ">
+          <h2 className="text-[30px] lg:text-[24px] md:text-[22px] font-bold xl:-mt-16 lg:-mt-20 md:-mt-12 text-center md:text-left max-w-lg">Génération Automatique des Factures</h2>
+          <p className="text-gray-950 md:text-[14px] lg:text-[16px] mt-4 font-medium font-inter text-left ">
           Générez automatiquement des factures professionnelles et personnalisées. Configurez des modèles de factures et des paramètres pour automatiser la création et l'envoi des factures.
           </p>
          
@@ -40,8 +40,8 @@ const FunctionnalityInvoice = () => {
       {/* Section 3: Résultats */}
       <section className="grid md:grid-cols-2  lg:pt-6 pt-16 items-center pb-8 md:gap-6">
         <div>
-          <h2 className="text-[30px] md:text-[24px] font-bold xl:-mt-16 md:-mt-4  text-center md:text-left max-w-lg">Suivi Facile du Paiement des Factures</h2>
-          <p className="text-gray-950 mt-4 font-medium font-inter text-left md:text-[16px] ">
+          <h2 className="text-[30px] lg:text-[24px] md:text-[22px] font-bold xl:-mt-16 md:-mt-4  text-center md:text-left max-w-lg">Suivi Facile du Paiement des Factures</h2>
+          <p className="text-gray-950 md:text-[14px] lg:text-[16px] mt-4 font-medium font-inter text-left">
           Suivez facilement le paiement des factures avec des outils de suivi en temps réel. Recevez des notifications et des rappels automatiques pour les factures en attente et les paiements à venir.
           </p>
         </div>

@@ -46,7 +46,7 @@ const ControlDsn = () => {
         </div>
 
         {/* Right Section (Image) */}
-        <div className="w-full md:w-1/2 flex justify-center md:justify-end md:-mt-72 lg:-mt-12 xl:mt-0   ">
+        <div className="w-full md:w-1/2 flex justify-center md:justify-end md:-mt-60 lg:-mt-12 xl:mt-0   ">
           <img
             className="max-w-full h-auto object-contain rounded-2xl"
             src="assets/images/verifidsn.png"

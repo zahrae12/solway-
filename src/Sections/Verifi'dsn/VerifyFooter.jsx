@@ -5,7 +5,7 @@ const VerifyFooter = () => {
   return (
     <section>
     
-        <div className="bg-yellow-500 py-8  lg:px-12 px-5 w-full lg:mt-4 xl:mt-0 xl:py-6">
+        <div className="bg-[#E0AC00] py-8  lg:px-12 px-5 w-full lg:mt-4 xl:mt-0 xl:py-6">
           <div className="w-full flex flex-col md:flex-row items-center">
             {/* Left Section - Text */}
             <div className="md:w-1/2 text-white w-full">

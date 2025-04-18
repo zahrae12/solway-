@@ -23,9 +23,10 @@ export default function CookieBanner() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 w-full bg-neutral-900 text-white px-4  py-3 md:px-4 z-50 shadow-md">
+    <div className="fixed bottom-0 left-0 w-full bg-neutral-900 text-white px-4 py-3 md:px-4 z-[9999] shadow-md">
+
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
-        <p className="text-center md:text-left xl:-ml-20 ">
+        <p className="text-center md:text-left ">
           We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.{' '}
           <a href="/cookies" className="text-yellow-500 ">Learn more</a>
         </p>

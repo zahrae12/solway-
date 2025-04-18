@@ -192,7 +192,7 @@ const Nav = () => {
         height={29}
       />
       
-      {/* Back Button */}
+      
       
     </div>
 
@@ -200,29 +200,48 @@ const Nav = () => {
     <div className="mt-6 space-y-6">
     <button 
         onClick={() => setIsMobileMoreOpen(false)} 
-        className="flex items-center text-gray-800 font-medium border border-gray-300 rounded-lg px-4 py-2"
+        className="flex items-center text-gray-800 font-medium border border-gray-300 rounded-lg px-2 py-2"
       >
         <FaArrowRight className="transform rotate-180 mr-2" /> Back
       </button>
       {More.map((category) => (
         <div key={category.label}>
           {/* Category title */}
-          <h3 className="text-lg font-semibold mb-3 text-gray-900">{category.label}</h3>
+          <h3 className="text-lg font-bold mb-3 text-black ">{category.label}</h3>
 
           {/* Items as links */}
-          <div className="grid grid-cols-2 gap-4">
-            {category.subtext.map((subItem, index) => (
-              <div key={index} className="py-2">
-                <Link 
-                  to={subItem.path} 
-                  className="text-gray-700 hover:underline block"
-                  onClick={() => setIsMobileMoreOpen(false)}
-                >
-                  {subItem.name}
-                </Link>
-              </div>
-            ))}
-          </div>
+          <div className="grid grid-cols-2 gap-x-6 gap-y-8  p-4 rounded-lg px-0">
+  <div className="space-y-6">
+    {category.subtext
+      .slice(0, Math.ceil(category.subtext.length / 2))
+      .map((subItem, index) => (
+        <Link
+          key={index}
+          to={subItem.path}
+          className="text-gray-700 hover:underline block"
+          onClick={() => setIsMobileMoreOpen(false)}
+        >
+          {subItem.name}
+        </Link>
+      ))}
+  </div>
+  <div className="space-y-6">
+    {category.subtext
+      .slice(Math.ceil(category.subtext.length / 2))
+      .map((subItem, index) => (
+        <Link
+          key={index}
+          to={subItem.path}
+          className="text-gray-700 hover:underline block"
+          onClick={() => setIsMobileMoreOpen(false)}
+        >
+          {subItem.name}
+        </Link>
+      ))}
+  </div>
+</div>
+
+
         </div>
       ))}
     </div>

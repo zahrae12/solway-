@@ -1,11 +1,13 @@
 import React from 'react'
 import { solutions } from '../constants'
 import SolutionsCard from '../Components/SolutionsCard'
+import { useTranslation } from 'react-i18next';
 const NosSolutions = () => {
+   const { t } = useTranslation();
   return (
     <section className="-mt-28 lg:py-14 lg:w-full lg:p-0  ">
     {/* Title */}
-    <h1 className="text-3xl font-extrabold text-center pt-8 lg:pt-0 ">Nos solutions</h1>
+    <h1 className="text-3xl font-extrabold text-center pt-8 lg:pt-0 ">{t("Nos solutions")}</h1>
     <p className="text-lg font-medium leading-[24px] text-gray-500 text-center px-2 lg:px-0">
       Découvrez nos outils pour la gestion des demandes, des <br className="hidden md:block" />
       ressources humaines et de la facturation.

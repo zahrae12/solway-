@@ -9,7 +9,7 @@ const VosCandidatures = () => {
       SOLWAY Recrute Déposez votre  candidature
       </h2>
       <p className="text-[16px] mt-4 text-gray-700  font-inter text-center xl:text-left">
-      Train people well enough so they can leave. <br/>Treat them well enough so they don't want to.
+      Formez les gens suffisamment bien pour qu'ils puissent partir. <br />Traitez-les suffisamment bien pour qu'ils n'en aient pas envie.
 </p>
     </div>
   
@@ -42,10 +42,10 @@ const VosCandidatures = () => {
                     <div>
                         <label className="block text-gray-700 font-medium mb-2">Niveau d'expérience : (requis)</label>
                         <select type="text" className="border p-2 w-full rounded border-gray-400" placeholder='' >
-                        <option value="">-- Please choose an option --</option>
+                        <option value="">-- Veuillez choisir une option --</option>
                        <option value="stage">0-1</option>
-                       <option value="cdI">+3years</option>
-                       <option value="cdd">+5years </option>
+                       <option value="cdI">+3 ans</option>
+                       <option value="cdd">+5 ans </option>
         </select>
                     </div>
                     <div>

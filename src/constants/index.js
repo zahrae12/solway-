@@ -4,11 +4,11 @@ import replace from "../assets/images/replace.png";
 
 
 export const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/about-us", label: "Features" },
+    { href: "/", label: "Acceuil" },
+    { href: "/about-us", label: "Fonctionnalités" },
     { href: "/products", label: "Clients" },
     { href: "/contact", label: "Contact " },
-    { href: "/more", label: "More" },
+    { href: "/more", label: "Plus" },
 ];
 export const activités = [
     {
@@ -29,7 +29,7 @@ export const activités = [
         subtext: "SOLWAY développe ses propres outils pour faciliter et améliorer votre quotidien."
     },
     {
-        label: "Itégration",
+        label: "Intégration",
         subtext: "SOLWAY intervient à la mise en place de vos solutions SAP, spécialement dans le module HR, ainsi sur d’autres périmètres : Linux, Base de données, Réseau …"
     },
 ];
@@ -42,12 +42,12 @@ export const innovations = [
   export const solutions = [
     {
       label: "SOLDESK",
-      subtext: "SOLDESK est un outil interne de gestion \n de tickets permettant de traiter efficacement \n les demandes clients (anomalies, évolutions,\n etc.) via une interface simple et rapide",
+      subtext: "SOLDESK est un outil interne de gestion de tickets permettant de traiter efficacement les demandes clients (anomalies, évolutions, etc.) via une interface simple et rapide",
       img: soldesk,
     },
     {
         label:"SOLWAY HR",
-        subtext:"SOLWAY HR est une solution complète pour\n optimiser la gestion des ressources\n  humaines, couvrant l'embauche, le \n recrutement, la paie, et plus encore.",
+        subtext:"SOLWAY HR est une solution complète pour optimiser la gestion des ressources\n  humaines, couvrant l'embauche, le \n recrutement, la paie, et plus encore.",
         img: hr,
     },
     {
@@ -57,7 +57,7 @@ export const innovations = [
     }
   ];
 
-  export const More = [
+  export const Plus = [
     {
       label: "Nos Solutions",
       subtext: [
@@ -87,15 +87,16 @@ export const innovations = [
   
   export const dsns = [
     { 
-      label: "ETAPE 2 : Sélection des données",
-      subtext: "Cette étape permet de :",
+      label: "step2.selection_data.label", // Reference translation key for label
+      subtext: "step2.selection_data.subtext", // Reference translation key for subtext
       text: [
-        "Sélectionner la source des données : Un fichier texte ou B2A",
-        "Renseigner la période de la paie.",
-        "Affiner la sélection en renseignant des matricules, tranches de décompte, sociétés",
-        "Choisir le mode d’exécution du programme",
-        "Précisez la méthode de récupération des fichiers B2A ainsi que les résultats du contrôle (Par mail, fichiers excel en local/ serveur)."
+        "step2.selection_data.item1", // Reference translation key for items
+        "step2.selection_data.item2",
+        "step2.selection_data.item3",
+        "step2.selection_data.item4",
+        "step2.selection_data.item5"
       ]
     }
   ];
+  
   

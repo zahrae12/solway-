@@ -20,21 +20,21 @@ const NosOffres = () => {
 
         {/* Job Interview Card */}
         <div className="order-2 md:order-3 bg-white border border-gray-200 rounded-lg shadow-sm p-6 mt-8 lg:mt-0 space-y-4 text-sm self-start">
-          <h2 className="text-xl font-semibold mb-4">Job Interview</h2>
+          <h2 className="text-xl font-semibold mb-4">Entretien d'embauche</h2>
           <div className="grid grid-cols-2 gap-4 text-sm">
             <div>
               <img src="assets/icons/CalendarBlank.svg" alt="Calendar" className="w-6 h-6 mb-2" />
-              <div className="text-gray-500 text-xs">EMPLOI POSTED:</div>
+              <div className="text-gray-500 text-xs">EMPLOI PUBLIÉ:</div>
               <div>13/06/2025</div>
             </div>
             <div>
               <img src="assets/icons/Timer.svg" alt="Timer" className="w-6 h-6 mb-2" />
-              <div className="text-gray-500 text-xs">EMPLOI EXPIRE ON:</div>
+              <div className="text-gray-500 text-xs">EMPLOI EXPIRE LE:</div>
               <div>13/10/2025</div>
             </div>
             <div>
               <img src="assets/icons/briefcase.svg" alt="Type" className="w-6 h-6 mb-2" />
-              <div className="text-gray-500 text-xs">JOB TYPE:</div>
+              <div className="text-gray-500 text-xs">TYPE D'EMPLOI:</div>
               <div>Stage</div>
             </div>
             <div>
@@ -44,8 +44,8 @@ const NosOffres = () => {
             </div>
             <div>
               <img src="assets/icons/briefcase.svg" alt="Experience" className="w-6 h-6 mb-2" />
-              <div className="text-gray-500 text-xs">EXPERIENCE:</div>
-              <div>1-5 years</div>
+              <div className="text-gray-500 text-xs">EXPÉRIENCE:</div>
+              <div>1-5 années</div>
             </div>
             <div>
               <img src="assets/icons/MapPinLine.svg" alt="Location" className="w-6 h-6 mb-2" />
@@ -54,8 +54,8 @@ const NosOffres = () => {
             </div>
             <div>
               <img src="assets/icons/Wallet.svg" alt="Salary" className="w-6 h-6 mb-2" />
-              <div className="text-gray-500 text-xs">SALARY:</div>
-              <div>$100-300/month</div>
+              <div className="text-gray-500 text-xs">SALAIRE:</div>
+              <div>$100-300/mois</div>
             </div>
           </div>
         </div>

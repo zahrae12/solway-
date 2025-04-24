@@ -1,18 +1,18 @@
 import React, { useState, useRef, useEffect } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { FiArrowRight } from "react-icons/fi";
-import { navLinks, More } from "../constants";
+import { navLinks, Plus } from "../constants";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import MoreDropdown from "./MoreDropDown";
-
+import { useTranslation } from 'react-i18next';
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMoreOpen, setIsMoreOpen] = useState(false);
   const [isMobileMoreOpen, setIsMobileMoreOpen] = useState(false); 
   const moreButtonRef = useRef(null);
   const dropdownRef = useRef(null);
-
+  const { t } = useTranslation(); 
   // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event) {
@@ -50,7 +50,7 @@ const Nav = () => {
         <ul className="hidden sm:flex flex-1 ml-8 sm:space-x-8 xl:space-x-16">
           {navLinks.map((item) => (
             <li key={item.label} className="relative">
-              {item.label === "More" ? (
+              {item.label === "Plus" ? (
                 <button
                   ref={moreButtonRef}
                   className="font-medium text-base lg:text-lg text-gray-900"
@@ -59,18 +59,18 @@ const Nav = () => {
                     setIsMoreOpen(!isMoreOpen);
                   }}
                 >
-                  {item.label}
+                  {t(item.label)}
                 </button>
               ) : (
                 <Link
                   to={item.href}
                   className="font-medium text-base lg:text-lg text-gray-900"
                 >
-                  {item.label}
+                  {t(item.label)}
                 </Link>
               )}
 
-              {item.label === "More" && isMoreOpen && (
+              {item.label === "Plus" && isMoreOpen && (
                 <MoreDropdown
                   position={{
                     top: `${moreButtonRef.current?.getBoundingClientRect().bottom + 10}px`,
@@ -85,10 +85,10 @@ const Nav = () => {
                   dropdownRef={dropdownRef}
                 >
                   <div className="flex flex-row gap-4">
-                    {More.map((category) => (
+                    {Plus.map((category) => (
                       <div key={category.label} className="mb-0">
                         <h4 className="font-semibold text-gray-900 px-4">
-                          {category.label}
+                        {t(`PlusMenu.${category.label}`)}
                         </h4>
                         <ul className="mt-6">
                           {category.subtext.map((subItem, index) => (
@@ -100,7 +100,7 @@ const Nav = () => {
                                 to={subItem.path}
                                 className="text-gray-700 text-sm hover:underline"
                               >
-                                {subItem.name}
+                                {t(`PlusMenu.${subItem.name}`)}
                               </Link>
                             </li>
                           ))}
@@ -159,7 +159,7 @@ const Nav = () => {
                   href={item.href}
                   className="block text-center py-2 font-montserrat text-lg text-gray-900 flex items-center justify-center gap-1"
                   onClick={(e) => {
-                    if (item.label === "More") {
+                    if (item.label === "Plus") {
                       e.preventDefault();
                       setIsMobileMoreOpen(true);
                       setIsMenuOpen(false); // Close the main menu
@@ -169,7 +169,7 @@ const Nav = () => {
                   }}
                 >
                   {item.label}
-                  {item.label === "More" && (
+                  {item.label === "Plus" && (
                     <FaArrowRight className="text-black text-xl mt-1 ml-1" />
                   )}
                 </a>
@@ -204,10 +204,10 @@ const Nav = () => {
       >
         <FaArrowRight className="transform rotate-180 mr-2" /> Back
       </button>
-      {More.map((category) => (
+      {Plus.map((category) => (
         <div key={category.label}>
           {/* Category title */}
-          <h3 className="text-lg font-bold mb-3 text-black ">{category.label}</h3>
+          <h3 className="text-lg font-bold mb-3 text-black ">{t(`PlusMenu.${category.label}`)}</h3>
 
           {/* Items as links */}
           <div className="grid grid-cols-2 gap-x-6 gap-y-8  p-4 rounded-lg px-0">
@@ -221,7 +221,7 @@ const Nav = () => {
           className="text-gray-700 hover:underline block"
           onClick={() => setIsMobileMoreOpen(false)}
         >
-          {subItem.name}
+          {t(`PlusMenu.${subItem.name}`)}
         </Link>
       ))}
   </div>
@@ -235,7 +235,7 @@ const Nav = () => {
           className="text-gray-700 hover:underline block"
           onClick={() => setIsMobileMoreOpen(false)}
         >
-          {subItem.name}
+            {t(`PlusMenu.${subItem.name}`)}
         </Link>
       ))}
   </div>

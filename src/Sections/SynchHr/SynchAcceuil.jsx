@@ -1,18 +1,19 @@
 import React from 'react'
-
+import { useTranslation } from 'react-i18next';
 export const SynchAcceuil = () => {
+  const {t} =useTranslation();
   return (
     
     <main className="w-auto p-6 bg-white shadow-lg px-4 rounded-md  ">
     {/* Section 1: Écran d'accueil */}
     <section className="grid md:grid-cols-2 gap-8 items-center text-center md:text-left ">
       <div>
-        <h2 className="text-[30px] font-bold">Écran d'accueil</h2>
+        <h2 className="text-[30px] font-bold">{t("Écran d'accueil")}</h2>
         <p className="text-gray-950 font-inter mt-2">
-  Il est doté d’une interface utilisateur simple et ergonomique.
+  {t("Il est doté d’une interface utilisateur simple et ergonomique.")}
 <br/> <br/>
-  Vous avez la possibilité de paramétrer les infotypes à 
-  <br className="hidden md:inline" /> synchroniser et les liens RFC.
+{t("Vous avez la possibilité de paramétrer les infotypes a")}  
+  <br className="hidden md:inline" /> {t("synchroniser et les liens RFC.")}
 </p>
 
       </div>
@@ -23,27 +24,27 @@ export const SynchAcceuil = () => {
   <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
   <div className="md:order-1 order-none mt-4 md:mt-0">
 
-    <h2 className="lg:text-[30px] md:text-[24px] text-[28px]  font-bold text-center md:text-left  md:mt-14  mt-8 xl:mt-24">Highly effective solutions</h2>
-    <p className="text-gray-950 md:text-[14px] lg:text-[16px] md:mt-2 mt-6 font-medium font-inter">
-      Cet écran vous permet de sélectionner les matricules à synchroniser.
+    <h2 className="lg:text-[30px] md:text-[24px] text-[28px]  font-bold text-center md:text-left  md:mt-14  mt-8 xl:mt-24">{t("Des solutions hautement efficaces")}</h2>
+    <p className="text-gray-950 md:text-[14px] lg:text-[16px] md:mt-2 mt-6 ">
+      {t("Cet écran vous permet de sélectionner les matricules à synchroniser.")}
     </p>
-    <ul className="list-disc pl-5 mt-6 md:mt-2 lg:text-[16px] xl:mt-8 md:text-[14px] text-gray-950 font-medium font-inter">
-      <li>Soit en sélectionnant directement les matricules concernées.</li>
-      <li>Soit en sélectionnant la population en se basant sur les :</li>
+    <ul className="list-disc pl-5 mt-6 md:mt-2 lg:text-[16px] xl:mt-8 md:text-[14px] text-gray-950 ">
+      <li>{t("Soit en sélectionnant directement les matricules concernées.")}</li>
+      <li>{t("Soit en sélectionnant la population en se basant sur les :")}</li>
       <ul className="list-disc pl-5 lg:text-[16px] mt-2 md:text-[14px] text-gray-950">
-        <li>Statuts d’activités</li>
-        <li>Tranches de décomptes</li>
-        <li>Sociétés</li>
-        <li>Domaines de personnel</li>
-        <li>Sous-domaines de personnel</li>
+        <li>{t("Statuts d’activités")}</li>
+        <li>{t("Tranches de décomptes")}</li>
+        <li>{t("Sociétés")}</li>
+        <li>{t("Domaines de personnel")}</li>
+        <li>{t("Sous-domaines de personnel")}</li>
       </ul>
     </ul>
 
-    <p className="text-gray-950 mt-2 lg:text-[16px] font-medium font-inter md:text-[14px]">
-      Vous avez aussi la possibilité de choisir le mode test et l’anonymisation des salariés à synchroniser.
+    <p className="text-gray-950 mt-2 lg:text-[16px]  md:text-[14px]">
+     {t("Vous avez aussi la possibilité de choisir le mode test et l’anonymisation des salariés à synchroniser.")}
     </p>
 
-    <p className="text-gray-950 mt-6 lg:text-[16px] md:mt-2 xl:mt-8 font-medium md:text-[14px] font-inter text-center md:text-left">Les modules concernés sont :</p>
+    <p className="text-gray-950 mt-6 lg:text-[16px] md:mt-2 xl:mt-8  md:text-[14px]  text-center md:text-left">{t("Les modules concernés sont :")}</p>
     <ul className="mt-6 md:mt-2 lg:text-[16px] text-gray-950 gap-4 space-y-3 md:text-[14px] ">
       {[
         "Administration du personnel (PA)",
@@ -58,7 +59,7 @@ export const SynchAcceuil = () => {
             alt=""
             className="w-5 h-5"
           />
-          <strong>{item}</strong>
+          <strong>{t(item)}</strong>
         </li>
       ))}
     </ul>
@@ -85,9 +86,9 @@ export const SynchAcceuil = () => {
     {/* Section 3: Résultats */}
     <section className="grid md:grid-cols-2   items-center mt-16 ">
   <div>
-    <h2 className="text-[30px] font-bold text-center md:text-left">Résultats</h2>
+    <h2 className="text-[30px] font-bold text-center md:text-left">{t("Résultats")}</h2>
     <p className="text-gray-950 font-inter md:mt-2 mt-4 max-w-xl text-center md:text-left">
-    Il est sous forme d’une table ALV qui permet l’affichage des résultats de la synchronisation par matricule et par module.
+   {t("Il est sous forme d’une table ALV qui permet l’affichage des résultats de la synchronisation par matricule et par module.")}
     </p>
   </div>
   <img 

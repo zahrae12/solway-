@@ -1,8 +1,10 @@
 import React from 'react'
 import { FiLinkedin, FiFacebook } from "react-icons/fi";
 import { RiTwitterXFill } from "react-icons/ri";
+import { useTranslation } from 'react-i18next';
 
 export const AssociationFooter = () => {
+  const {t} =useTranslation();
   return (
    <footer className="text-gray-700 md:px-10 px-4 py-4 pt-8">
    <div className="container mx-auto flex flex-col md:flex-row md:justify-between items-center gap-y-6 md:gap-y-0 text-sm">
@@ -11,19 +13,19 @@ export const AssociationFooter = () => {
      <div className="flex flex-wrap items-center justify-center md:justify-start w-full md:w-auto gap-x-2 gap-y-1 text-center md:text-left">
        {/* Copyright */}
        <p className="font-medium whitespace-nowrap">
-         © 2025 <span className="font-semibold">Solway</span> | All Rights Reserved
+         © 2025 <span className="font-semibold">Solway</span> {t("| Tous droits réservés")}
        </p>
  
        {/* Links */}
-       <a href="#" className="text-green-500 underline">Terms of Service</a>
+       <a href="#" className="text-green-500 underline">{t("Conditions d'utilisation")}</a>
        <span className="hidden sm:inline text-gray-500">|</span>
-       <a href="#" className="text-green-500 underline">Privacy Policy</a>
+       <a href="#" className="text-green-500 underline">{t("Politique de confidentialité")}</a>
        <span className="hidden sm:inline text-gray-500">|</span>
-       <a href="#" className="text-green-500 underline">Cookies Policy</a>
+       <a href="#" className="text-green-500 underline">{t("Politique relative aux cookies")}</a>
        <span className="hidden sm:inline text-gray-500">|</span>
        <a href="#" className="text-green-500 underline">Contact</a>
        <span className="hidden sm:inline text-gray-500">|</span>
-       <a href="#" className="text-green-500 underline">Support</a>
+       <a href="#" className="text-green-500 underline">{t("Assistance")}</a>
      </div>
  
      {/* Right Section */}
@@ -37,7 +39,7 @@ export const AssociationFooter = () => {
  
        {/* Language Button */}
        <button className="border border-green-500 text-green-500 px-4 py-2 rounded-md hover:bg-green-600 hover:text-white transition">
-         English
+         {t("English")}
        </button>
      </div>
  

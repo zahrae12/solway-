@@ -34,12 +34,12 @@ export const VosMissionsPage = () => {
                 </div>
                  <div>
                         <label className="block text-gray-700 font-medium mb-2">Email (requis)</label>
-                        <input type="text" className="border p-2 w-full rounded border-gray-400" placeholder='Stage' />
+                        <input type="text" className="border p-2 w-full rounded border-gray-400"  />
                     </div>
                     </div>
                     <div>
                         <label className="block text-gray-700 font-medium mb-2">Vos Missions</label>
-                        <input type="text" className="border p-2 w-full rounded border-gray-400" placeholder="No file selected"/>
+                        <input type="text" className="border p-2 w-full rounded border-gray-400" />
                     </div>
                     <div>
                         <label className="block text-gray-700 font-medium mb-2">Niveau d'expériences: </label>
@@ -64,10 +64,10 @@ export const VosMissionsPage = () => {
                     <div>
                     <label className="block">Mode de travail</label>
                     <select className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm" placeholde="-Please choose an option-">
-                   <option value="">-- Select --</option>
-                   <option value="stage">On site</option>
-                   <option value="cdI">remote</option>
-                   <option value="cdd">hybrid</option>
+                   <option value="">-- Veuillez choisir une option --</option>
+                   <option value="stage">Sur site</option>
+                   <option value="cdI">à distance</option>
+                   <option value="cdd">hybride</option>
                 </select>
       
                   </div>

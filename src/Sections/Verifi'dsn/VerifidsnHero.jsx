@@ -1,6 +1,7 @@
 import React from 'react'
-
+import { useTranslation } from 'react-i18next';
 const VerifidsnHero = () => {
+  const {t} =useTranslation();
   return (
     <section className="w-full h-auto flex flex-col md:flex-row items-center md:items-start md:gap-10 xl:gap-16 pt-24 md:pt-32 xl:pt-36 px-4 md:px-12 xl:px-16 md:py-8">
     {/* Left side */}
@@ -9,7 +10,7 @@ const VerifidsnHero = () => {
         Verif'dsn
       </h1>
       <p className="text-lg font-normal text-gray-950">
-        Optimisez la gestion de vos DSN comme jamais auparavant ! Détectez les erreurs en un instant, facilitez le travail de vos gestionnaires de paie avec des contrôles rapides et efficaces, et libérez un temps précieux pour vous consacrer à des tâches stratégiques. Avec Verif'DSN, dites adieu aux complications et bonjour à la simplicité et à la performance !
+       {t("Optimisez la gestion de vos DSN comme jamais auparavant ! Détectez les erreurs en un instant, facilitez le travail de vos gestionnaires de paie avec des contrôles rapides et efficaces, et libérez un temps précieux pour vous consacrer à des tâches stratégiques. Avec Verif'DSN, dites adieu aux complications et bonjour à la simplicité et à la performance !")}
       </p>
     </div>
   

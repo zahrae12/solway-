@@ -1,25 +1,27 @@
 import React from 'react'
 import { FiLinkedin,  FiFacebook } from "react-icons/fi";
 import { RiTwitterXFill } from "react-icons/ri";
+import { useTranslation } from 'react-i18next';
 const Footer = () => {
+   const { t } = useTranslation();
   return (
     <div>
     <section className=" flex justify-center items-center  lg:px-8 px-4">
     <div className="bg-[#E0AC00] lg:w-full lg:h-auto text-center px-4 py-12 rounded-lg shadow-lg ">
-    <h1 className='text-white text-3xl lg:font-extrabold  font-bold leading-[22px]  '>SOLWAY Recrute</h1>
-    <h1 className='text-white  lg:text-3xl lg:font-extrabold font-bold leading-[42px]  '>Vous etes Consultant SAP HR ? </h1>
+    <h1 className='text-white text-3xl lg:font-extrabold  font-bold leading-[22px]  '>{t("SOLWAY Recrute")}</h1>
+    <h1 className='text-white  lg:text-3xl lg:font-extrabold font-bold leading-[42px]  '>{t("Vous etes Consultant SAP HR ?")} </h1>
     
     <p className="text-white mt-2 text-sm sm:text-base">
-  Rejoignez-nous pour découvrir nos opportunités uniques et évoluez 
-  <span className="hidden lg:block"></span> avec nous, du stage au CDI débutant, 
-  jusqu’au CDI expérimenté. Votre
-  <span className="hidden lg:block"></span> avenir commence ici !
+  {t("Rejoignez-nous pour découvrir nos opportunités uniques et évoluez")} 
+  <span className="hidden lg:block"></span> {t("avec nous, du stage au CDI débutant, ")}
+  {t("jusqu’au CDI expérimenté. Votre")}
+  <span className="hidden lg:block"></span> {t("avenir commence ici !")}
 </p>
 
 
     {/* Button */}
     <button className="mt-6 bg-white border border-yellow-300  text-yellow-600 font-semibold py-3 px-20 w-full sm:w-auto  lg:py-3 lg:px-10 rounded-md shadow-md hover:bg-gray-100 transition">
-      Rejoignez-nous
+      {t("Rejoignez-nous")}
     </button>
   </div>
   
@@ -31,19 +33,19 @@ const Footer = () => {
        <div className="flex flex-wrap items-center justify-center md:justify-start w-full md:w-auto gap-x-2 gap-y-1 text-center md:text-left">
          {/* Copyright */}
          <p className="font-medium whitespace-nowrap">
-           © 2025 <span className="font-semibold">Solway</span> | All Rights Reserved
+           © 2025 <span className="font-semibold">Solway</span> {t("| Tous droits réservés")}
          </p>
    
          {/* Links */}
-         <a href="#" className="text-yellow-600 underline">Terms of Service</a>
+         <a href="#" className="text-yellow-600 underline">{t("Conditions d'utilisation")}</a>
          <span className="hidden sm:inline text-gray-500">|</span>
-         <a href="#" className="text-yellow-600 underline">Privacy Policy</a>
+         <a href="#" className="text-yellow-600 underline">{t("Politique de confidentialité")}</a>
          <span className="hidden sm:inline text-gray-500">|</span>
-         <a href="#" className="text-yellow-600 underline">Cookies Policy</a>
+         <a href="#" className="text-yellow-600 underline">{t("Politique relative aux cookies")}</a>
          <span className="hidden sm:inline text-gray-500">|</span>
          <a href="#" className="text-yellow-600 underline">Contact</a>
          <span className="hidden sm:inline text-gray-500">|</span>
-         <a href="#" className="text-yellow-600 underline">Support</a>
+         <a href="#" className="text-yellow-600 underline">{t("Assistance")}</a>
        </div>
    
        {/* Right Section */}
@@ -57,7 +59,7 @@ const Footer = () => {
    
          {/* Language Button */}
          <button className="border border-yellow-600 text-yellow-600 px-4 py-2 rounded-md hover:bg-yellow-600 hover:text-white transition">
-           English
+           {t("Anglais")}
          </button>
        </div>
    

@@ -45,7 +45,7 @@ const Verifidsn = () => {
             alt="dots right"
             className="hidden md:block absolute right-0 top-52 object-cover z-0"
           />
-          <div className="relative z-10 md:-mt-4 md:px-10 lg:px-2">
+          <div className="relative z-10 md:-mt-4 md:px-10 lg:px-2 xl:pt-6">
             <AllSteps />
           </div>
         </section>

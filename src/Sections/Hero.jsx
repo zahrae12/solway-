@@ -1,8 +1,11 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-
+import { useTranslation } from 'react-i18next';
 const Hero = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
+
+  
   return (
     <section className="w-full flex flex-col md:flex-row items-center md:gap-40">
 
@@ -15,21 +18,22 @@ const Hero = () => {
         <span className="  lg:text-black">Welcome to <span className='text-yellow-500 lg:text-black'>SOLWAY Consulting & Services</span></span>  <br />
           <span className=" lg:text-yellow-500">Cross our way, Find your solution.</span>
         </h1>
-        <p className="text-xl md:text-[18px] font-medium p-2 lg:p-0  text-center md:text-left mt-3 text-gray-700 md:text-nowrap lg:mt-4 md:px-4">
-          Libérez le potentiel de votre entreprise avec des solutions sur <br className="hidden sm:block" /> mesure et des conseils d'experts.
-          Ensemble, relevons vos défis<br className="hidden sm:block"/> et propulsons votre succès.
-        </p>
+        <p className="text-xl md:text-[18px] font-medium p-2 lg:p-0 text-center md:text-left mt-3 text-gray-700 md:text-nowrap lg:mt-4 md:px-4">
+                 {t("Libérez le potentiel de votre entreprise avec des solutions sur mesure et des conseils d'experts.")}
+  <br className="hidden sm:block" />
+                {t("Ensemble, relevons vos défis et propulsons votre succès.")}
+</p>
         <div className="mt-6  lg:mt-8 flex flex-col sm:flex-row gap-4 lg:gap-6 w-full px-4 lg:px-0 md:px-4">
 
           <button className="bg-yellow-500 text-white  lg:w-[200px] lg:h-[48px] w-full h-[48px] rounded-lg shadow-lg font-semibold "
            onClick={() => navigate("/about")}>
-            Qui sommes-nous ?
+            {t("Qui sommes-nous ?")}
           </button>
           <button
   className="border border-gray-300 lg:w-[200px] lg:h-[48px] w-full h-[48px] rounded-lg font-semibold bg-gray-100"
   onClick={() => navigate("/offres-emploi")}
 >
-  Nos offres d'emploi
+      {t("Nos offres d'emploi")}
 </button>
         </div>
       </div>

@@ -1,20 +1,21 @@
 import React from 'react';
 import ControlDsnCard from '../../Components/ControlDsnCard';
 import { dsns } from '../../constants';
-
+import { useTranslation } from 'react-i18next';
 const ControlDsn = () => {
+  const {t} =useTranslation();
   return (
     <section className="lg:py-0 lg:px-4 px-0  ">
       {/* Title Section */}
       <div className="text-center ">
   {/* Large Screens (Default) */}
   <h1 className="hidden sm:block text-[30px] font-extrabold font-inter -mt-8">
-    Contrôlez votre DSN qu'en <span className="block -mt-2 text-[30px]">trois étapes :</span>
+    {t("Contrôlez votre DSN qu'en")} <span className="block -mt-2 text-[30px]">{t("trois étapes :")}</span>
   </h1>
 
   {/* Small Screens (Mobile) */}
   <h1 className="sm:hidden text-[26px] font-extrabold font-inter mt-0 ">
-    Contrôlez votre DSN <br /> qu'en trois étapes :
+    {t("Contrôlez votre DSN")} <br /> {t("qu'en trois étapes :")}
   </h1>
 </div>
 
@@ -22,15 +23,15 @@ const ControlDsn = () => {
       <div className="mt-10 flex flex-col md:flex-row gap-4 md:gap-2 justify-center items-center  ">
   <button className="border border-gray-300 text-black lg:py-2 py-3 rounded-lg font-semibold w-full md:w-[350px] xl:w-full md:py-0 flex items-center justify-center gap-2 md:p-2">
     <img src="assets/icons/layer.png" alt="Paramétrage" className="w-5 h-5" />
-    Paramétrage des blocs DSN
+    {t("Paramétrage des blocs DSN")}
   </button>
   <button className="border bg-yellow-500 text-white lg:py-2 py-3 rounded-lg font-semibold w-full md:w-[350px] xl:w-full flex items-center justify-center gap-2">
     <img src="assets/icons/data.png" alt="Sélection" className="w-5 h-5" />
-    Sélection des données
+    {t("Sélection des données")}
   </button>
   <button className="border border-gray-300 text-black lg:py-2 py-3 rounded-lg font-semibold w-full md:w-[350px] xl:w-full flex items-center justify-center gap-2">
     <img src="assets/icons/shield.png" alt="Exécution" className="w-5 h-5" />
-    Exécution du contrôle
+    {t("Exécution du contrôle")}
   </button>
 </div>
 

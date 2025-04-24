@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useTranslation } from 'react-i18next';
 
 const steps = [
   {
@@ -20,6 +21,7 @@ const steps = [
 ];
 
 const AllSteps = () => {
+  const {t} = useTranslation();
   const [currentStep, setCurrentStep] = useState(0);
   const [isXL, setIsXL] = useState(window.innerWidth >= 1280);
 
@@ -40,7 +42,7 @@ const AllSteps = () => {
   return (
     <div className="relative w-full overflow-hidden">
       <h2 className="text-[30px] font-extrabold font-inter  text-center -mt-2">
-        Check all steps
+     {t("Vérifier toutes les étapes")}
       </h2>
 
       <div className="overflow-hidden mt-8 ">

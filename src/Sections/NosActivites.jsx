@@ -1,8 +1,9 @@
 import React from 'react'
 import { activités } from '../constants'
 import ActivityCard from '../Components/ActivityCard'
-
+import { useTranslation } from 'react-i18next';
 const NosActivites = () => {
+  const { t } = useTranslation();
   return (
     <section className="w-full md:px-4 lg:px-8 px-5 xl:padding pt-4 flex flex-col xl:flex-row items-center  xl:items-start xl:gap-10 xl:-mt-24  text-center  ">
   {/* Left Section */}
@@ -11,11 +12,10 @@ const NosActivites = () => {
       Everything you need
     </h2>
     <h1 className="text-3xl font-extrabold leading-[36px] mt-1   ">
-      Nos activités
+     {t("Nos activités")}
     </h1>
     <p className="text-lg font-medium xl:text-left text-center mt-4 text-gray-600   leading-normal">
-      Notre ambition est de vous servir tout en mettant en œuvre les meilleures pratiques issues du savoir-faire acquis
-      au cours des nombreux projets réalisés pour différents clients.
+      {t("Notre ambition est de vous servir tout en mettant en œuvre les meilleures pratiques issues du savoir-faire acquis au cours des nombreux projets réalisés pour différents clients.")}
     </p>
   </div>
 

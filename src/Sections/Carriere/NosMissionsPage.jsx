@@ -37,10 +37,10 @@ const NosMissionsPage = () => {
                     <label className="block text-gray-700 font-medium mb-2">Mission - voir notre page Linkedin (requis)</label>
                     <select className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm"
         >
-                       <option value="">-- Select --</option>
+                       <option value="">-- Verillez Choisir une option --</option>
                        <option value="stage">CEO</option>
                        <option value="cdI">MANAGER</option>
-                       <option value="cdd">Ingineer </option>
+                       <option value="cdd">Inginner </option>
         </select>
                 </div>
 
@@ -48,10 +48,10 @@ const NosMissionsPage = () => {
                     <div>
                     <label className="block text-gray-700 font-medium mb-2">Niveau d'expérience : (requis)</label>
                         <select type="text" className="border p-2 w-full rounded border-gray-400" placeholder='' >
-                        <option value="">-- Please choose an option --</option>
+                        <option value="">-- Veuillez Choisir une option --</option>
                        <option value="stage">0-1</option>
-                       <option value="cdI">+3years</option>
-                       <option value="cdd">+5years </option>
+                       <option value="cdI">+3 ans</option>
+                       <option value="cdd">+5 ans </option>
         </select>
                     </div>
                     <div>

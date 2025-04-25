@@ -47,7 +47,7 @@ const Nav = () => {
         </a>
 
         {/* Desktop Nav */}
-        <ul className="hidden sm:flex flex-1 ml-8 sm:space-x-8 xl:space-x-16">
+        <ul className="hidden sm:flex flex-1 ml-8 sm:space-x-8 xl:space-x-16 md:space-x-6">
           {navLinks.map((item) => (
             <li key={item.label} className="relative">
               {item.label === "Plus" ? (

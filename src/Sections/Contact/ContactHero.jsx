@@ -35,7 +35,7 @@ const ContactHero = () => {
                     </div>
 
                     <div>
-                        <label className="block text-gray-700 font-medium mb-2">Email (requis)</label>
+                        <label className="block text-gray-700 font-medium mb-2">{t("Email (requis)")}</label>
                         <input type="email" className="border p-2 w-full rounded border-gray-400" required />
                     </div>
 

@@ -19,7 +19,7 @@ i18n
     supportedLngs: ['fr', 'en'],
     debug: true,
     detection: {
-      
+      // change priprity order
       order: ['navigator', 'htmlTag'],
       caches: [], 
     },

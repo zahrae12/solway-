@@ -19,9 +19,11 @@ const Hero = () => {
           <span className=" lg:text-yellow-500">Cross our way, Find your solution.</span>
         </h1>
         <p className="text-xl md:text-[18px] font-medium p-2 lg:p-0 text-center md:text-left mt-3 text-gray-700 md:text-nowrap lg:mt-4 md:px-4">
-                 {t("Libérez le potentiel de votre entreprise avec des solutions sur mesure et des conseils d'experts.")}
+                 {t("Libérez le potentiel de votre entreprise avec des solutions sur ")}
   <br className="hidden sm:block" />
-                {t("Ensemble, relevons vos défis et propulsons votre succès.")}
+                {t("mesure et des conseils d'experts.Ensemble, relevons vos défis et ")}
+                <br className="hidden sm:block" />
+                {t("propulsons votre succès.")}
 </p>
         <div className="mt-6  lg:mt-8 flex flex-col sm:flex-row gap-4 lg:gap-6 w-full px-4 lg:px-0 md:px-4">
 

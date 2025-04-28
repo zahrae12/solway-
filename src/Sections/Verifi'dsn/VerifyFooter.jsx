@@ -3,7 +3,7 @@ import { FiLinkedin,  FiFacebook } from "react-icons/fi";
 import { RiTwitterXFill } from "react-icons/ri";
 import { useTranslation } from 'react-i18next';
 const VerifyFooter = () => {
-  const {t} = useTranslation();
+  const {t , i18n} = useTranslation();
   return (
     <section>
     
@@ -67,9 +67,16 @@ const VerifyFooter = () => {
              </div>
        
              {/* Language Button */}
-             <button className="border border-yellow-600 text-yellow-600 px-4 py-2 rounded-md hover:bg-yellow-600 hover:text-white transition">
-               {t("Anglais")}
-             </button>
+             <button 
+  onClick={() => {
+    const newLang = i18n.language === 'fr' ? 'en' : 'fr'; 
+    i18n.changeLanguage(newLang);
+  }}
+  className="border border-yellow-600 text-yellow-600 px-4 py-2 rounded-md hover:bg-yellow-600 hover:text-white transition"
+>
+  {i18n.language === 'fr' ? 'English' : 'Français'}
+</button>
+
            </div>
        
          </div>

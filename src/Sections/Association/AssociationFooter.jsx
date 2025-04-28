@@ -4,7 +4,7 @@ import { RiTwitterXFill } from "react-icons/ri";
 import { useTranslation } from 'react-i18next';
 
 export const AssociationFooter = () => {
-  const {t} =useTranslation();
+  const {t , i18n} =useTranslation();
   return (
    <footer className="text-gray-700 md:px-10 px-4 py-4 pt-8">
    <div className="container mx-auto flex flex-col md:flex-row md:justify-between items-center gap-y-6 md:gap-y-0 text-sm">
@@ -38,9 +38,16 @@ export const AssociationFooter = () => {
        </div>
  
        {/* Language Button */}
-       <button className="border border-green-500 text-green-500 px-4 py-2 rounded-md hover:bg-green-600 hover:text-white transition">
-         {t("English")}
-       </button>
+       <button 
+  onClick={() => {
+    const newLang = i18n.language === 'fr' ? 'en' : 'fr'; 
+    i18n.changeLanguage(newLang);
+  }}
+  className="border border-green-500 text-green-500 px-4 py-2 rounded-md hover:bg-green-600 hover:text-white transition"
+>
+  {i18n.language === 'fr' ? 'English' : 'Français'}
+</button>
+
      </div>
  
    </div>
